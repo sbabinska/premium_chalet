@@ -1,0 +1,27 @@
+.payment {
+    background-color: $dark-blue;
+
+    &__inner {
+        padding: 29px 37px 9px 46px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @include md {
+            flex-direction: column;
+            padding: 29px 37px 37px 37px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        font-family: $exo2;
+        color: $megawhite;
+    }
+}

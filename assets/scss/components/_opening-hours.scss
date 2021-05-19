@@ -1,0 +1,20 @@
+.opening-hours {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 48px;
+    padding-top: 44px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    color: $blue;
+    img {
+        margin-top: 6px;
+        margin-right: 17px;
+    }
+    strong {
+        color: $ultra-blue;
+        font-weight: normal;
+        display: inline-block;
+        margin-left: 2px;
+    }
+}

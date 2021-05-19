@@ -1,0 +1,35 @@
+body, html {
+    font-family: $raleway;
+}
+
+h1, h2, h3 {
+    font-family: "Exo 2", sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    @include font-size(32px, 36px, 600);
+}
+
+h2 {
+    color: $blue;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+h3 {
+    font-family: $exo2;
+    margin-bottom: 19px;
+    @include font-size(26px, 36px, 600);
+}
+.pretitle {
+    background-color: rgba(18,21,26,.5);
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 18px 4px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $raleway;
+    border-radius: 4px;
+}
+

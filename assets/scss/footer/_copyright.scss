@@ -1,0 +1,33 @@
+.copyright {
+    &__inner {
+        display: flex;
+        padding-left: 40px;
+        align-items: center;
+
+        @include lg {
+            padding-left: 0;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        p {
+            margin: 15px 10px 20px;
+            @include font(16px, 20px, normal, $ptsans, $font-gray);
+
+            @include lg {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        img {
+            margin-right: 40px;
+
+            @include lg {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.product-list {
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+
+    &__inner {
+        display: flex;
+        background-color: $megawhite;
+        padding: 40px 20px 0 20px;
+        border-radius: 0 4px 0 0;
+
+        @include lg {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 20px;
+
+        @include lg {
+            padding: 30px 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 4px;
+
+            @include lg {
+                width: 100%;
+            }
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        background-color: $megablack;
+        color: $megawhite;
+        right: 20px;
+        text-transform: uppercase;
+        border-radius: 0 4px 0 4px;
+        font-size: 10px;
+        font-weight: bolder;
+        padding: 7px 20px;
+    }
+
+    &__link {
+        &:hover {
+            color: $ultra-blue;
+
+            .product-list__title {
+                color: $ultra-blue;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-family: $exo2;
+        font-weight: 600;
+        color: $blue;
+        padding-top: 14px;
+        margin-bottom: 2px;
+        transition: color .3s;
+    }
+
+    &__info {
+        color: $font-gray;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 11px;
+        font-family: $ptsans;
+    }
+
+    &__price {
+        font-family: $rawline;
+        border: 1px solid $gray;
+        border-radius: 0 0 4px 4px;
+        color: $ultra-blue;
+        padding: 5px 9px;
+        margin-bottom: 19px;
+        border-top: none;
+    }
+
+    .btn__minicart {
+        display: inline-block;
+        padding: 6px 15px;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+        padding-top: 7px;
+        padding-left: 7px;
+        border-radius: 4px 4px 0 0;
+        &:hover {
+            background-color: $megawhite;
+        }
+        &::after {
+            margin-top: 10px;
+        }
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.contact-info {
+    background-color: $blue;
+    display: flex;
+    min-height: 64px;
+    border-radius: 0 0 4px 0;
+    &--text {
+        color: $ultra-blue;
+        padding: 7px 30px 5px 12px;
+    }
+    &--number {
+        color: $megawhite;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    &--number-title {
+        padding-left: 6px;
+        font-weight: bold;
+    }
+    &--icon {
+        padding-top: 16px;
+        padding-left: 35px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}

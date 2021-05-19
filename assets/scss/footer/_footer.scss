@@ -1,0 +1,102 @@
+.footer {
+    background-color: $megablack;
+    padding-bottom: 80px;
+
+    @include lg {
+        padding-bottom: 50px;
+    }
+
+    &__inner {
+        display: flex;
+        padding-left: 39px;
+        padding-top: 56px;
+
+        @include lg {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__col {
+        margin-right: 60px;
+
+        @include lg {
+            width: 50%;
+            margin-right: 0;
+        }
+
+        @include md {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--title {
+            margin-bottom: 4px;
+        }
+
+        &--info {
+            flex-grow: 2;
+            margin-left: 15px;
+
+            @include lg {
+                margin-left: 0;
+                flex-grow: unset;
+            }
+        }
+
+        &--address {
+            max-width: 304px;
+            .btn {
+                min-width: 87px;
+                color: $megawhite;
+            }
+            p {
+                color: $gray;
+                font-size: 16px;
+                font-family: $ptsans;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+                max-width: 304px;
+            }
+        }
+
+        h4 {
+            color: $white;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: $rawline;
+            line-height: 36px;
+            text-transform: uppercase;
+            img {
+                margin-left: 8px;
+                margin-top: -4px;
+            }
+        }
+    }
+
+    &__item {
+        color: $gray;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: $ptsans;
+        text-transform: uppercase;
+        line-height: 18px;
+    }
+
+    .contact-info--icon {
+        @include md {
+            padding-left: 6px;
+        }
+    }
+}

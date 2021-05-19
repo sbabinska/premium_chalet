@@ -1,0 +1,54 @@
+.content {
+    margin-top: 1px;
+    padding-top: 68px;
+    border-top: 1px solid $gray;
+
+    &__inner {
+        display: flex;
+
+        @include lg {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text-col {
+        padding-left: 40px;
+        padding-right: 70px;
+
+        @include lg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $ptsans;
+            line-height: 20px;
+            color: $font-gray;
+            margin-bottom: 20px;
+
+            strong {
+                text-transform: uppercase;
+                letter-spacing: 1;
+                font-weight: bold;
+                color: $black;
+            }
+
+            span {
+                color: $ultra-blue;
+            }
+        }
+
+        .btn {
+            margin-top: 7px;
+            color: white;
+        }
+    }
+
+    &__img-col {
+        padding-top: 23px;
+        img {
+            max-width: 100%;
+        }
+    }
+}

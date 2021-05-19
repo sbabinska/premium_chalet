@@ -1,0 +1,99 @@
+.link-list {
+    background-color: $lightgray;
+    margin-top: 29px;
+    padding-bottom: 47px;
+
+    &__inner {
+        display: flex;
+        padding: 0 55px;
+        @include  lg {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__item {
+        display: block;
+        padding: 59px 20px 20px 20px;
+        text-align: center;
+        text-decoration-color: $ultra-blue;
+
+        @include  lg {
+            padding: 59px 20px 0 20px;
+        }
+
+        &:hover {
+            color: $ultra-blue;
+
+            .link-list__title {
+                color: $ultra-blue;
+            }
+
+            .link-list__subtitle {
+                text-decoration: none;
+            }
+
+            .link-list__img-wrapper {
+                position: relative;
+                &::after {
+                    background: url("img/check.png") no-repeat $ultra-blue center;
+                }
+            }
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        min-width: 120px;
+        border-radius: 4px;
+    }
+
+    &__img-wrapper {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 47px;
+            height: 47px;
+            right: 7px;
+            top: -29px;
+            background: url("img/check.png") no-repeat $blue center;
+            border-radius: 50%;
+            transition: background .3s;
+            border: 10px solid $lightgray;
+
+            @include xl {
+                right: -22px;
+            }
+
+            @include lg {
+                right: 30px;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 21px;
+        font-family: $exo2;
+        font-weight: 600;
+        color: $blue;
+        margin-top: 22px;
+        margin-bottom: 13px;
+        transition: color .3s;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $ptsans;
+        font-weight: normal;
+        color: $font-gray;
+        transition: color .3s;
+        text-decoration: none;
+    }
+}

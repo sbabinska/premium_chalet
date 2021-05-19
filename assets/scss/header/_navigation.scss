@@ -1,0 +1,139 @@
+.header {
+    &__navigation {
+        position: relative;
+        top: -30px;
+
+        @include lg {
+            top: 20px;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 35px;
+            right: 0;
+            top: 0;
+            position: absolute;
+            background-color: $blue;
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .navbar {
+            background-color: $black;
+            padding: 0 0 0 24px;
+            border-radius: 4px;
+
+            @include lg {
+                padding: 10px 0 10px 24px;
+            }
+
+            .navbar-toggler {
+                background-color: white;
+            }
+
+            .nav-link {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 36px;
+                padding: 14px 16px;
+                letter-spacing: .9px;
+                transition: background .3s;
+
+                @include xl {
+                    font-size: 10px;
+                    padding: 5px 7px;
+                }
+
+                &:hover {
+                    border-top: 3px solid $ultra-blue;
+                    padding: 12px 16px 14px;
+                    background-color: $dark-blue2;
+                    color: $megawhite;
+
+                    @include xl {
+                        padding: inherit;
+                        border-top: none;
+                        background-color: $black;
+                        color: $white;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+        .dropdown-toggle {
+            &::after {
+                border: none;
+                background-image: url("img/Контур 1139.png");
+                height: 6px;
+                width: 8px;
+            }
+        }
+
+        .dropdown {
+            position: static;
+        }
+
+        .beak {
+            &::before {
+                left: 292px;
+            }
+        }
+    }
+
+    &__dropdown.show {
+        width: 100%;
+        display: flex;
+        top: 74px;
+        padding: 21px 20px 14px;
+
+        @include lg {
+            flex-direction: column;
+            background-color: $black;
+            padding: 21px 0 14px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .dropdown-item {
+            display: inline-block;
+            padding: 0 21px;
+
+            &:hover {
+                background-color: $megawhite;
+
+                span {
+                    color: $blue2;
+                }
+            }
+
+            img {
+                display: block;
+                margin-bottom: 16px;
+                @include lg {
+                    display: none;
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                transition: color .3s;
+                @include font(12px, 18px, bold, $raleway, $blue);
+
+                @include lg {
+                    text-align: left;
+                    @include font(12px, 18px, bold, $raleway, $white);
+                }
+            }
+        }
+    }
+}

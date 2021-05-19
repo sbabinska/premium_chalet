@@ -1,0 +1,52 @@
+.messenger {
+    background-color: $lightgray;
+    border-radius: 8px 8px 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 8px;
+    z-index: 3;
+    box-shadow: 0 -4px 4px rgba(18, 21, 26, .1);
+
+    &__inner {
+        display: flex;
+        padding: 11px 15px 8px;
+        align-items: center;
+    }
+
+    &__text {
+        max-width: 150px;
+        margin-left: 12px;
+
+        h3 {
+            @include font(13px, 13px, bold, $rawline, $blue);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        p {
+            @include font(12px, 14px, normal, $ptsans, #5C718C);
+            margin-bottom: 9px;
+        }
+    }
+
+    &__img {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border: 3px solid $lightgray;
+            background-color: $ultra-blue;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+        }
+    }
+
+    .btn {
+        margin: 0 4px;
+    }
+}

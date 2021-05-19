@@ -1,0 +1,22 @@
+.header {
+    &__login {
+        padding-top: 41px;
+        margin-right: 8px;
+
+        @include lg {
+            flex-grow: 2;
+        }
+
+        @include md {
+            display: none;
+        }
+
+        .btn {
+            min-width: 151px;
+            padding-left: 10px;
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+}

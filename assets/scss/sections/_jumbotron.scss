@@ -1,0 +1,81 @@
+.jumbotron {
+    background-image: url("img/bg.png") ;
+    color: $megawhite;
+    margin-top: -60px;
+    padding-bottom: 92px;
+    position: relative;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include lg {
+        margin-top: 0;
+    }
+
+    &::after {
+        content: "";
+        background-color: $megawhite;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 40px;
+    }
+
+    &__video {
+        height: 300px;
+        width: 100%;
+        box-shadow: 0 2px 32px rgba(21, 18, 26, .6);
+        border-radius: 8px;
+
+        @include lg {
+            height: auto;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        padding-top: 16px;
+        padding-left: 91px;
+
+        @include lg {
+            flex-wrap: wrap;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    &__text {
+        padding-left: 0;
+
+        @include lg {
+            order: 2;
+        }
+
+        p {
+            font-family: $ptsans;
+        }
+    }
+
+    &__col {
+        &--video {
+            padding: 10px 74px 0 73px;
+
+            @include xl {
+                padding: 10px 0 0 0;
+            }
+
+            @include lg {
+                order: 1;
+            }
+        }
+    }
+
+    .btn--arrow {
+        margin-top: 23px;
+        min-width: 222px;
+    }
+}

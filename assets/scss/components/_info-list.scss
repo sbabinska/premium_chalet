@@ -1,0 +1,44 @@
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid $gray;
+    margin-top: 20px;
+    padding-top: 42px;
+    margin-bottom: 35px;
+
+    @include md {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    &__col {
+        margin-left: 10px;
+        @include md {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        width: 25%;
+        display: flex;
+        align-items: flex-start;
+        padding: 0 15px;
+
+        @include md {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        display: block;
+        @include font(16px, 16px, 600, $exo2, $blue);
+    }
+
+    &__info {
+        display: block;
+        text-transform: uppercase;
+        @include font(11px, 11px, bold, $exo2, $gray-blue);
+    }
+}

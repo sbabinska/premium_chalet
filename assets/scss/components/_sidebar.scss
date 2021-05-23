@@ -1,0 +1,139 @@
+.sidebar {
+    padding-left: 37px;
+
+    @include xl {
+        padding-left: 0;
+    }
+
+    &__label {
+        @include font(16px, 20px, normal, $ptsans, $blue);
+        position: relative;
+        top: -1px;
+        flex-grow: 2;
+        padding-left: 13px;
+    }
+
+    &__qty {
+        @include font(11px, 19px, bold, $ptsans, $gray-blue);
+    }
+
+    &__checkbox {
+        margin-top: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 0px;
+        padding-bottom: 0;
+        margin-top: 17px;
+        min-height: 40px;
+    }
+
+    .accordion-button {
+        padding: 8px 0 2px 0;
+
+        &::after {
+            background-size: contain;
+            height: 11px;
+            width: 11px;
+            margin-top: 0;
+            background-image: url("img/plus.png");
+        }
+
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            background-color: $megawhite;
+            @include font (16px, 36px, 600, $exo2, $blue);
+
+            @include xl {
+                line-height: 20px;
+                padding-bottom: 7px;
+            }
+
+            &::after {
+                transform: none;
+                background-image: url("img/minus.png");
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .accordion {
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 9px 20px 31px 25px;
+    }
+
+    .accordion-item {
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .accordion-body {
+        padding: 17px 0 0;
+    }
+
+    .form-check-input {
+        width: 13px;
+        height: 13px;
+        border: 1px solid $gray;
+        background-color: $megawhite;
+    }
+
+    .form-check {
+        margin-bottom: 4px;
+        display: flex;
+        padding-left: 0;
+    }
+
+    .slider-range-labels {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+
+        input {
+            width: 40px;
+            border: none;
+            @include font(16px, 24px, normal, $ptsans, $blue);
+            padding-top: 7px;
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    .ui-widget.ui-widget-content {
+        border: none;
+        background-color: $gray;
+        height: 3px;
+        margin-top: 5px;
+        border-radius: 2px;
+    }
+
+    .ui-slider-horizontal .ui-slider-range {
+        background-color: $ultra-blue;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default {
+        background-color: $ultra-blue;
+        border-radius: 50%;
+        border: none;
+        height: 13px;
+        width: 13px;
+        box-shadow: 0 1px 2px rgba(18, 21, 26, .3);
+    }
+
+    .ui-state-hover, .ui-state-focus {
+        border: none;
+    }
+}

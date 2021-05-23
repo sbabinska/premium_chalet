@@ -1,0 +1,137 @@
+.login-page {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        background-color: $megawhite;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__inner {
+        background-color: $megawhite;
+        margin-top: -40px;
+        border-radius: 0 4px 0 0;
+        padding: 40px 40px 79px;
+    }
+
+    &__form-outer {
+        border: 1px solid $gray;
+        border-radius: 8px;
+        text-align: center;
+        padding-bottom: 40px;
+
+        @include md {
+            border: none;
+        }
+    }
+
+    &__link {
+        @include font(16px, 24px, normal, $ptsans, $ultra-blue);
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    &__form {
+        display: inline-block;
+        text-align: left;
+        width: 361px;
+        max-width: 100%;
+        padding-top: 20px;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 19px;
+        }
+
+        .form-group {
+            &.checked {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 12px;
+                    height: 9px;
+                    background-image: url("img/check-green.png");
+                    right: 14px;
+                    top: 30px;
+                }
+
+                .form-control {
+                    border-color: $green;
+                }
+
+                label {
+                    color: $green;
+                }
+            }
+
+            label {
+                color: $gray-blue;
+                font-size: 11px;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 11px;
+                font-family: $ptsans;
+                background-color: $megawhite;
+                padding: 0 6px;
+                margin-left: 11px;
+                z-index: 2;
+            }
+        }
+
+        .form-control {
+            z-index: 1;
+            color: $blue;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $ptsans;
+            margin-top: -13px;
+            background-color: $megawhite !important;
+            margin-bottom: 18px;
+            margin-bottom: 13px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $gray;
+            }
+        }
+
+        .form-check {
+            label {
+                padding-left: 6px;
+                @include font(16px, 19px, normal, $ptsans, $blue);
+            }
+        }
+
+        .btn-row {
+            margin-top: 20px;
+        }
+
+        .btn {
+            min-width: 153px;
+            margin-right: 9px;
+        }
+
+        .btn--arrow-back {
+            min-width: unset;
+        }
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    .form-group {
+        margin-bottom: 11px;
+    }
+}

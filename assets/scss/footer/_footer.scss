@@ -92,6 +92,12 @@
         font-family: $ptsans;
         text-transform: uppercase;
         line-height: 18px;
+        transition: color .3s;
+
+        &:hover {
+            color: $megawhite;
+            text-decoration: underline;
+        }
     }
 
     .contact-info--icon {

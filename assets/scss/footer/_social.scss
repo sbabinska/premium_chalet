@@ -1,5 +1,5 @@
 .social {
-    padding-bottom: 17px;
+    padding-bottom: 14px;
     background-color: $blue;
 
     &__inner {
@@ -34,9 +34,16 @@
         &--number {
             margin-top: -4px;
             margin-left: 4px;
-        }
-        &--number {
             padding-right: 0;
+            margin-top: 3px;
+        }
+
+        &--text {
+            padding: 7px 30px 5px 14px;
+        }
+
+        &--number-title {
+            margin-left: 4px;
         }
     }
 

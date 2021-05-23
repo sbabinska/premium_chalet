@@ -3,24 +3,30 @@
     display: flex;
     min-height: 64px;
     border-radius: 0 0 4px 0;
+
     &--text {
         color: $ultra-blue;
-        padding: 7px 30px 5px 12px;
+        padding: 7px 30px 5px 18px;
     }
+
     &--number {
         color: $megawhite;
         line-height: 20px;
         font-size: 20px;
     }
+
     &--number-title {
-        padding-left: 6px;
+        padding-left: 2px;
+        color: $ultra-blue;
         font-weight: bold;
     }
+
     &--icon {
         padding-top: 16px;
         padding-left: 35px;
     }
+
     p {
-        margin-bottom: 0;
+        margin-bottom: 3px;
     }
 }

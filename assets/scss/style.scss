@@ -8,6 +8,11 @@
 @import "components/contact-info";
 @import "components/opening-hours";
 @import "components/messenger";
+@import "components/breadcrumb";
+@import "components/sidebar";
+@import "components/page-heading";
+@import "components/filter-bar";
+@import "components/pagination";
 
 @import "header/beak";
 @import "header/top";
@@ -28,3 +33,6 @@
 @import "sections/link-list";
 @import "sections/category-list";
 @import "sections/content-section";
+
+@import "pages/category-page";
+@import "pages/login-page";

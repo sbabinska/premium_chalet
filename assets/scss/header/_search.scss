@@ -53,6 +53,11 @@
             font-family: $ptsans;
             margin-top: -13px;
             margin-bottom: 18px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $gray;
+            }
         }
 
         .btn {

@@ -1,0 +1,16 @@
+.page-heading {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid $gray;
+
+    h2 {
+        margin-bottom: 13px;
+    }
+
+    p {
+        strong {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

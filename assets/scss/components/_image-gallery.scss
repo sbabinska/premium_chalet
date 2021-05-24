@@ -1,0 +1,104 @@
+.image-gallery {
+    position: relative;
+
+    &__viewport {
+        img {
+            max-width: 100%;
+            object-fit: contain;
+            min-height: 365px;
+
+            @include lg {
+                min-height: unset;
+            }
+        }
+    }
+
+    &__bar {
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 5px;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        img {
+            height: 56px;
+            object-fit: contain;
+        }
+    }
+
+    .btn-scale {
+        width: 38px;
+        height: 38px;
+        background-color: $ultra-blue;
+        opacity: .9;
+        transition: opacity .3s;
+        border: none;
+        position: relative;
+        bottom: 49px;
+        left: 31px;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &::before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-image: url("img/zoom-in.png");
+        }
+    }
+
+    .btn--arrow-black {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background-color: $megawhite;
+        top: 162px;
+
+        @include lg {
+            top: 45%;
+        }
+
+        &::before {
+            content: "";
+            background-image: url("img/arrow-back.png");
+            width: 6px;
+            height: 8px;
+            display: inline-block;
+            top: 16px;
+            right: 16px;
+            position: absolute;
+        }
+
+        &:hover, &:focus {
+            background-color: $megawhite;
+        }
+    }
+
+    .btn-prev {
+        left: 0;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .btn-next {
+        right: 0;
+        border-radius: 4px 0 0 4px;
+
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+}

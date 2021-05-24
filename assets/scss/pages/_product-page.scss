@@ -1,0 +1,10 @@
+.product-page {
+    @media (min-width: 992px) {
+        .col-lg-7 {
+            width: 61%;
+        }
+        .col-lg-5 {
+            width: 39%;
+        }
+    }
+}

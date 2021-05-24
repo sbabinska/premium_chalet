@@ -1,0 +1,200 @@
+.product {
+    &__sidebar-btns {
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+    }
+
+    &__sidebar-list {
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 16px;
+
+        li {
+            position: relative;
+            @include font(14px, 20px, normal, $ptsans, $font-gray);
+
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-image: url("img/plus-blue.png");
+                position: absolute;
+                position: absolute;
+                left: -16px;
+                top: 6px;
+            }
+        }
+    }
+
+    &__controls-row {
+        margin-top: -11px;
+    }
+
+    &__price {
+        @include font(25px, 25px, bold, $rawline, $ultra-blue);
+    }
+
+    &__sidebar {
+        border-radius: 4px;
+        border: 1px solid $gray;
+        padding: 28px 20px;
+        margin-left: 15px;
+
+        h2 {
+            @include font(32px, 36px, 600, $exo2, $blue);
+            border-bottom: 1px solid $gray;
+            padding-bottom: 19px;
+        }
+
+        h3 {
+            @include font(18px, 18px, 600, $exo2, $blue);
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            width: 51%;
+
+            .dropdown-toggle {
+                width: 208px;
+                text-align: left;
+            }
+        }
+
+        .cart__qty-col {
+            display: inline-block;
+        }
+
+        .btn {
+            img {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__price-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__description {
+        margin-top: -11px;
+    }
+
+    &__info-list {
+        flex-wrap: wrap;
+        border-top: none;
+        padding-top: 11px;
+        margin-bottom: 3px;
+
+        .info-list__item {
+            width: 50%;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__table-head {
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .nav-link, .nav-link.active {
+            min-width: 156px;
+            text-align: center;
+            @include font(16px, 23px, 600, $exo2, $blue);
+            border-color: $gray;
+        }
+
+        .nav-link.active {
+            border-bottom: none;
+        }
+    }
+
+    &__table {
+        border: 1px solid $gray;
+        border-radius: 4px;
+        margin-bottom: 42px;
+
+        th, td {
+            width: 50%;
+            border: none;
+            @include font(16px, 16px, normal, $ptsans, $font-gray);
+            padding: 14px 24px;
+        }
+    }
+
+    &__section-heading {
+        margin-top: 42px;
+    }
+
+    &__product-list {
+        .product-list__inner {
+            padding: 0;
+            padding-top: 53px;
+            justify-content: space-between;
+
+            @include lg {
+                flex-wrap: wrap;
+            }
+        }
+
+        .product-list__item {
+            width: 22.5%;
+            padding: 0;
+
+            @include lg {
+                width: 49%;
+            }
+            @include md {
+                width: 100%;
+            }
+        }
+
+        .product-list__badge {
+            right: 0;
+        }
+    }
+
+    &__text-block {
+        display: flex;
+        border: 1px solid $gray;
+        border-radius: 4px;
+        align-items: flex-start;
+        padding-right: 30px;
+        margin-bottom: 17px;
+
+        &--img {
+            min-width: 156px;
+            text-align: center;
+            img {
+                display: inline-block;
+                margin-top: 24px;
+            }
+        }
+
+        &--text {
+            h2 {
+                @include font(16px, 16px, 600, $exo2, $blue);
+                border-bottom: 1px solid $gray;
+                padding-top: 24px;
+                padding-bottom: 12px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .btn {
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.product-page {
+    & + .cta {
+        margin-top: 34px;
+    }
+}

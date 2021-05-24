@@ -73,6 +73,28 @@
                 margin-right: 10px;
             }
         }
+
+        .form-check {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                margin-left: 10px;
+                margin-right: 11px;
+            }
+
+            span {
+                @include font(11px, 11px, bold, $ptsans, $gray-blue);
+            }
+
+            label {
+                @include font(16px, 24px, normal, $ptsans, $blue);
+            }
+        }
+
+        .form-check-label {
+            flex-grow: 2;
+        }
     }
 
     &__price-row {

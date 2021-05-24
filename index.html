@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <meta charset="UTF-8">
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+<!--Plugin CSS file with desired skin-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+<!--Plugin JavaScript file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <link rel="stylesheet" href="assets/style.css">
 
 <body>
@@ -211,245 +226,366 @@
             </div>
         </div>
     </header>
-    <div class="jumbotron">
-        <div class="container jumbotron__container">
-            <div  class="jumbotron__text col-lg-5">
-                <p class="pretitle">Premiumchalet.fr</p>
-                <h1>Fabricant d'abris de jardin, garages, maisons et chalet en bois</h1>
-                <p>Avec des machines modernes, nous produisons plus de 2000 cabines par an de pour</p>
-                <a class="btn btn--arrow" href="#">
-                    Cabinplanner
-                    <img src="assets/img/arrow-right.png" alt="">
-                </a>
-            </div>
-            <div class="jumbotron__col jumbotron__col--video col-lg-7">
-                <iframe class="jumbotron__video" src="" frameborder="0"></iframe>
-            </div>
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <button class="btn btn--back">Reculer</button>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Produits</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">abris de jardin</li>
+                </ol>
+            </nav>
         </div>
     </div>
-    <div class="product-list">
+    <div class="top-section product-page">
         <div class="container">
-            <div class="product-list__inner">
-                <div class="col-md-6 col-lg-3 product-list__item">
-                    <a href="#" class="product-list__link">
-                        <span class="product-list__badge">abris de jardin</span>
-                        <img src="https://premiumchalet.fr//uploads/media_file/file/3465/thumb_toronto_3x3_8__660d.png" alt="">
-                        <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
-                    </a>
-                    <p class="product-list__info">No. de produit: 18307</p>
-                    <div class="dropdown">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            standard 28mm
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                        </div>
-                    </div>
-                    <p class="product-list__price">1904.99 €</p>
-                    <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
-                </div>
-                <div class="col-md-6 col-lg-3 product-list__item">
-                    <a href="#" class="product-list__link">
-                        <span class="product-list__badge">abris de jardin</span>
-                        <img src="https://premiumchalet.fr//uploads/media_file/file/3132/thumb_trento_6x5_2__d226.png" alt="">
-                        <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
-                    </a>
-                    <p class="product-list__info">No. de produit: 18307</p>
-                    <div class="dropdown">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            standard 28mm
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                        </div>
-                    </div>
-                    <p class="product-list__price">1904.99 €</p>
-                    <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
-                </div>
-                <div class="col-md-6 col-lg-3 product-list__item">
-                    <a href="#" class="product-list__link">
-                        <span class="product-list__badge">abris de jardin</span>
-                        <img src="https://premiumchalet.fr//uploads/media_file/file/3132/thumb_trento_6x5_2__d226.png" alt="">
-                        <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
-                    </a>
-                    <p class="product-list__info">No. de produit: 18307</p>
-                    <div class="dropdown">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            standard 28mm
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                        </div>
-                    </div>
-                    <p class="product-list__price">1904.99 €</p>
-                    <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
-                </div>
-                <div class="col-md-6 col-lg-3 product-list__item">
-                    <a href="#" class="product-list__link">
-                        <span class="product-list__badge">abris de jardin</span>
-                        <img src="https://premiumchalet.fr//uploads/media_file/file/3465/thumb_toronto_3x3_8__660d.png" alt="">
-                        <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
-                    </a>
-                    <p class="product-list__info">No. de produit: 18307</p>
-                    <div class="dropdown show">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            standard 28mm
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                          <a class="dropdown-item" href="#">standard 28mm</a>
-                        </div>
-                    </div>
-                    <p class="product-list__price">1904.99 €</p>
-                    <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="link-list">
-        <div class="container">
-            <div class="link-list__inner">
+            <div class="top-section__inner">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/house.png" alt="">
-                            </div>
-                            <p class="link-list__title">Modèles standard
-                                et personnalisés</p>
-                            <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
+                <div class="col-lg-7">
+                    <div class="image-gallery">
+                        <button class="btn btn--arrow-black btn-prev"></button>
+                        <button class="btn btn--arrow-black btn-next"></button>
+                        <div class="image-gallery__viewport">
+                            <img src="assets/img/gallery/1.png" alt="">
+                        </div>
+                        <div class="image-gallery__bar">
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/2.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/3.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/4.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/5.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/6.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/7.png" alt="">
+                            </a>
+                            <a href="#" class="image-gallery__item">
+                                <img src="assets/img/gallery/7.png" alt="">
+                            </a>
+                        </div>
+                        <button class="btn btn-scale"></button>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/windows.png" alt="">
-                            </div>
-                            <p class="link-list__title">Les fenêtres
-                                et portes </p>
-                            <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/tree.png" alt="">
-                            </div>
-                            <p class="link-list__title">Épinette nordique
-                                séchée au four </p>
-                            <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/cog.png" alt="">
-                            </div>
-                            <p class="link-list__title">Technologie </p>
-                            <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="category-list">
-        <div class="container">
-            <div class="category-list__inner">
-                <div class="col-md-6 col-lg-4">
-                    <div class="category-list__info">
-                        <p class="category-list__info--title">
-                            Notre assortiment
-                        </p>
-                        <p>
-                            <strong>Imperdiet class</strong> conubia consectet nascetur elementum nam nec bibendum consectetur.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="" class="category-list__item">
-                        <img src="https://premiumchalet.fr/uploads/media_file/file/2869/thumb_linus_6x6_wc_2__8f30.png" alt="">
-                        <p class="category-list__item--title">
-                            Abris de jardin
-                        </p>
-                        <p class="category-list__item--btn">
-                            <span>Abris de jardin</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="" class="category-list__item">
-                        <img src="https://premiumchalet.fr/uploads/media_file/file/3418/thumb_lulu-1_2_4x1_2_6__1f0a.png" alt="">
-                        <p class="category-list__item--title">
-                            Chalets en bois
-                        </p>
-                        <p class="category-list__item--btn">
-                            <span>Chalets en bois</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="" class="category-list__item">
-                        <img src="https://premiumchalet.fr/uploads/media_file/file/2869/thumb_linus_6x6_wc_2__8f30.png" alt="">
-                        <p class="category-list__item--title">
-                            Maisons en bois
-                        </p>
-                        <p class="category-list__item--btn">
-                            <span>Summer houses</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="" class="category-list__item">
-                        <img src="https://premiumchalet.fr/uploads/media_file/file/2802/thumb_iberica_t2_6_36x8_86_2__62de.png" alt="">
-                        <p class="category-list__item--title">
-                            Maisons en bois
-                        </p>
-                        <p class="category-list__item--btn">
-                            <span>Summer houses</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="" class="category-list__item">
-                        <img src="https://premiumchalet.fr/uploads/media_file/file/2869/thumb_linus_6x6_wc_2__8f30.png" alt="">
-                        <p class="category-list__item--title">
-                            Maisons en bois
-                        </p>
-                        <p class="category-list__item--btn">
-                            <span>Summer houses</span>
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="container">
-            <div class="content__inner">
-                <div class="col-lg-6 content__text-col">
-                    <h2>Cabinplanner®</h2>
-                    <p>
-                        <strong>Maison en bois,</strong> maison d’été, cabane en madriers, cabanon – termes connus depuis longtemps qui sont reconnus par les gens comme une maison confortable, belle et naturelle utilisée pour les loisirs, la vie ou pour la décoration de jardin. Le bois a toujours été le plus aimé par nombreuses <span>personnes</span> pour sa valeur intérieure naturelle.
+                    <p class="product__description">
+                        <strong> Maison en bois </strong>compacte avec 2 chambres, salle de bain et salon / cuisine. Le porche de 1,5 m'est très apprécié, surtout en été, où l'on peut apprécier de pouvoir se mettre à l'abri quand la brise souffle la nuit, au cœur d'une conversation agréable.
                     </p>
-                    <p>
-                        Aujourd’hui, la maison en bois a également acquis une nouvelle signification écologique, qui prend de plus en plus d'importance dans notre monde moderne et mondialisé.
-                    </p>
-                    <a href="" class="btn btn__minicart--darkblue">Lire la suite</a>
+                    <ul class="info-list product__info-list">
+                        <li class="info-list__item">
+                            <img src="assets/img/Контур 1446.png" alt="">
+                            <div class="info-list__col">
+                                <span class="info-list__title">Paiements Sécurisés</span>
+                                <span class="info-list__info">Vestibulum per congue primis</span>
+                            </div>
+                        </li>
+                        <li class="info-list__item">
+                            <img src="assets/img/Контур 1450.png" alt="">
+                            <div class="info-list__col">
+                                <span class="info-list__title">Emballage Solide</span>
+                                <span class="info-list__info">Natoque cum augue senectus a enim etiam</span>
+                            </div>
+                        </li>
+                        <li class="info-list__item">
+                            <img src="assets/img/Контур 1451.png" alt="">
+                            <div class="info-list__col">
+                                <span class="info-list__title">Transport Gratuit</span>
+                                <span class="info-list__info">Natoque cum augue senectus a enim etiam</span>
+                            </div>
+                        </li>
+                        <li class="info-list__item">
+                            <img src="assets/img/Контур 1452.png" alt="">
+                            <div class="info-list__col">
+                                <span class="info-list__title">Assistance Client</span>
+                                <span class="info-list__info">Vestibulum per congue primis</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="product__table-head nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Spécification</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                    </ul>
+                    <table class="table table-striped product__table">
+                        <tbody>
+                            <tr></tr>
+                          <tr>
+                            <th scope="row">Largeur du bâtiment x longueur</th>
+                            <td>6 x 6 m</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface intérieure</th>
+                            <td>32.0 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Hauteur du bâtiment (m, jusqu'au sommet de la crête)</th>
+                            <td>2.87</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surplomb du toit</th>
+                            <td>1.5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface de toit</th>
+                            <td>55 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Largeur du bâtiment x longueur</th>
+                            <td>6 x 6 m</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface intérieure</th>
+                            <td>32.0 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Hauteur du bâtiment </th>
+                            <td>2.87</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surplomb du toit</th>
+                            <td>1.5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface de toit</th>
+                            <td>55 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface intérieure</th>
+                            <td>32.0 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Hauteur du bâtiment </th>
+                            <td>2.87</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surplomb du toit</th>
+                            <td>1.5</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface de toit</th>
+                            <td>55 m²</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Surface de toit</th>
+                            <td>55 m²</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="product__text-block">
+                          <div class="product__text-block--img">
+                            <img src="assets/img/house.png" alt="">
+                          </div>
+                          <div class="product__text-block--text">
+                              <h2>Modèles standard et personnalisés</h2>
+                              <p>
+                                <strong> Nous avons une grande collection </strong>de modèles standard et en plus nous concepteurs travaillant à plein temps pour réaliser des projets personnalisés. L'utilisation de notre outil en ligne CabinPlanner permet de vendre des maisons de taille personnalisée aussi facilement que de vendre des modèles standard. Chaque semaine, nous produisons divers projets personnalisés et grâce à notre outil CabinPlanner, nous parvenons à être plus compétitifs.
+                              </p>
+                              <button class="btn btn--arrow-back">suivante</button>
+                          </div>
+                      </div>
+                      <div class="product__text-block">
+                        <div class="product__text-block--img">
+                          <img src="assets/img/award.png" alt="">
+                        </div>
+                        <div class="product__text-block--text">
+                            <h2>Produits populaires</h2>
+                            <p>
+                              <strong> La majeure partie </strong>de notre production est exportée aux Pays-Bas, en Italie, en Espagne et en Allemagne. Actuellement, nous avons plus de 60 employés et on se développe chaque année. La satisfaction du client est notre principale priorité.
+                            </p>
+                            <button class="btn btn--arrow-back">suivante</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="product__sidebar">
+                            <h2>Iberica T2 6,36 x 8,86 68mm</h2>
+                            <div class="product__price-row">
+                                <span class="product__price-label">Prix de la cabine:</span>
+                                <span class="product__price">11287.44 €</span>
+                            </div>
+                            <div class="product__controls-row">
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        standard 28mm
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                    </div>
+                                </div>
+                                <div class="cart__qty-col">
+                                    <div class="form-group">
+                                        <button class="btn">+</button>
+                                        <input type="number" class="form-control cart__qty-input" value="1">
+                                        <button class="btn">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                                <ul class="product__sidebar-list">
+                                    <li>Bitume brun avec sous-couche </li>
+                                    <li>Oui - Je voudrais  </li>
+                                </ul>
+                                <div class="product__sidebar-btns">
+                                    <a href="" class="btn btn__minicart btn__minicart--blue">
+                                        <img src="assets/img/cart-white.png" alt="">
+                                        Ajouter au panier
+                                    </a>
+                                    <a href="" class="btn btn__minicart btn__minicart--darkblue">
+                                        <img src="assets/img/ruler.png" alt="">
+                                        Personnaliser
+                                    </a>
+                                </div>
+                                <h3>Choisissez des extras</h3>
+                                <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Nombre de chambres
+                                    </button>
+                                </h4>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <img src="assets/img/tmp/c1.png" alt="">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                              Default radio
+                                            </label>
+                                            <span>+945.91 €</span>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <img src="assets/img/tmp/c3.png" alt="">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                              Second default radio
+                                            </label>
+                                            <span>+945.91 €</span>
+                                          </div>
+                                          <div class="form-check disabled">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                            <img src="assets/img/tmp/c1.png" alt="">
+                                            <label class="form-check-label" for="exampleRadios3">
+                                              Disabled radio
+                                            </label>
+                                            <span>+945.91 €</span>
+                                          </div>
+                                    </div>
+                                </div>
+                                <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Choisissez un ensemble 
+                                    </button>
+                                </h4>
+                                <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Imprégnation réciproque 
+                                    </button>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="page-heading product__section-heading">
+                        <h2>Abris de jardin</h2>
+                    </div>
+                    <div class="product-list product__product-list">
+                        <div class="product-list__inner">
+                            <div class="product-list__item">
+                                <a href="#" class="product-list__link">
+                                    <span class="product-list__badge">abris de jardin</span>
+                                    <img src="https://premiumchalet.fr//uploads/media_file/file/3465/thumb_toronto_3x3_8__660d.png" alt="">
+                                    <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
+                                </a>
+                                <p class="product-list__info">No. de produit: 18307</p>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        standard 28mm
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                    </div>
+                                </div>
+                                <p class="product-list__price">1904.99 €</p>
+                                <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
+                            </div>
+                            <div class="product-list__item">
+                                <a href="#" class="product-list__link">
+                                    <span class="product-list__badge">abris de jardin</span>
+                                    <img src="https://premiumchalet.fr//uploads/media_file/file/3132/thumb_trento_6x5_2__d226.png" alt="">
+                                    <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
+                                </a>
+                                <p class="product-list__info">No. de produit: 18307</p>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        standard 28mm
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                    </div>
+                                </div>
+                                <p class="product-list__price">1904.99 €</p>
+                                <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
+                            </div>
+                            <div class="product-list__item">
+                                <a href="#" class="product-list__link">
+                                    <span class="product-list__badge">abris de jardin</span>
+                                    <img src="https://premiumchalet.fr//uploads/media_file/file/3132/thumb_trento_6x5_2__d226.png" alt="">
+                                    <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
+                                </a>
+                                <p class="product-list__info">No. de produit: 18307</p>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        standard 28mm
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                    </div>
+                                </div>
+                                <p class="product-list__price">1904.99 €</p>
+                                <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
+                            </div>
+                            <div class="product-list__item">
+                                <a href="#" class="product-list__link">
+                                    <span class="product-list__badge">abris de jardin</span>
+                                    <img src="https://premiumchalet.fr//uploads/media_file/file/3465/thumb_toronto_3x3_8__660d.png" alt="">
+                                    <p class="product-list__title">Erna 2,5 x 3,4 28mm</p>
+                                </a>
+                                <p class="product-list__info">No. de produit: 18307</p>
+                                <div class="dropdown show">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        standard 28mm
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                      <a class="dropdown-item" href="#">standard 28mm</a>
+                                    </div>
+                                </div>
+                                <p class="product-list__price">1904.99 €</p>
+                                <a href="" class="btn btn__minicart btn__minicart--darkblue">Des détails</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 content__img-col">
-                    <img src="assets/img/plan.png" alt="">
-                </div>
+                
             </div>
         </div>
     </div>
+
     <div class="cta">
         <div class="container">
             <div class="row">
@@ -564,28 +700,7 @@
                 </div>
             </div>    
     </div>
-    <div class="messenger">
-        <div class="messenger__inner">
-            <div class="messenger__img">
-                <img src="assets/img/pawel.png" alt="">
-            </div>
-            <div class="messenger__text">
-                <h3>Paweł Ogórek</h3>
-                <p>Si vous avez des questions, n'hésitez pas à les poser!</p>
-            </div>
-            <button class="btn btn--white">
-                <img src="assets/img/mail-blue.png" alt="">
-            </button>
-            <button class="btn btn--white">
-                <img src="assets/img/smartphone-blue.png" alt="">
-            </button>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-                      

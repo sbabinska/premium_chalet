@@ -19,7 +19,7 @@
         padding-top: 40px;
         background-color: $megawhite;
         border-radius: 0 4px 0 0;
-        padding: 40px 25px;
+        padding: 40px 23px 45px 25px;
     }
 
     &__item {
@@ -75,7 +75,7 @@
             z-index: 2;
             opacity: 1;
             font-size: 20px;
-            line-height: 36px;
+            line-height: 23px;
             font-family: $exo2;
             font-weight: 600;
             transition: opacity .3s;
@@ -131,6 +131,8 @@
         img {
             width: 100%;
             border-radius: 4px;
+            max-height: 219px;
+            object-fit: cover;
         }
     }
 
@@ -160,12 +162,6 @@
             font-family: $exo2;
             font-weight: 600;
             line-height: 36px;
-        }
-
-        strong {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1;
         }
     }
 

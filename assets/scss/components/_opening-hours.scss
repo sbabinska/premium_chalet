@@ -8,15 +8,19 @@
     line-height: 16px;
     color: $blue;
 
+    &__text {
+        padding-top: 2px;
+    }
+
     img {
         margin-top: 6px;
         margin-right: 17px;
     }
 
     strong {
-        color: $ultra-blue;
-        font-weight: normal;
         display: inline-block;
         margin-left: 2px;
+        @include font(13px, 13px, 600, $exo2, $ultra-blue);
+        margin-left: 4px;
     }
 }

@@ -27,12 +27,18 @@ h3 {
     background-color: rgba(18,21,26,.5);
     display: inline-block;
     text-transform: uppercase;
-    padding: 5px 18px 4px 12px;
-    font-size: 14px;
+    padding: 6px 11px 7px 12px;
+    font-size: 12px;
     font-weight: bold;
-    font-family: $raleway;
+    font-family: "Raleway",sans-serif;
     border-radius: 4px;
+    letter-spacing: .6px;
     color: $megawhite;
+    margin-bottom: 13px;
+
+    & + h1 {
+        margin-bottom: 17px;
+    }
 }
 
 p {
@@ -44,9 +50,10 @@ p {
 
     strong {
         text-transform: uppercase;
-        letter-spacing: 1;
         font-weight: bold;
         color: $black;
+        font-size: 14px;
+        letter-spacing: 1.4px;
     }
 
     span {

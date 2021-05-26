@@ -39,7 +39,7 @@
     &__container {
         display: flex;
         padding-top: 16px;
-        padding-left: 91px;
+        padding-left: 94px;
 
         @include lg {
             flex-wrap: wrap;
@@ -58,6 +58,8 @@
         p {
             color: $megawhite;
             font-family: $ptsans;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 
@@ -76,7 +78,8 @@
     }
 
     .btn--arrow {
-        margin-top: 23px;
+        margin-top: 20px;
         min-width: 222px;
+        box-shadow: 0px 1px 3px rgba(18, 21, 26, .3);
     }
 }

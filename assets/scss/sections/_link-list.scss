@@ -1,7 +1,7 @@
 .link-list {
-    background-color: $lightgray;
-    margin-top: 29px;
-    padding-bottom: 47px;
+    background-color: #E8ECF1;
+    margin-top: 46px;
+    padding-bottom: 44px;
 
     &__inner {
         display: flex;
@@ -55,7 +55,7 @@
             display: block;
             width: 47px;
             height: 47px;
-            right: 7px;
+            right: 17px;
             top: -29px;
             background: url("img/check.png") no-repeat $blue center;
             border-radius: 50%;

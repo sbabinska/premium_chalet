@@ -8,7 +8,7 @@
 
     &__inner {
         display: flex;
-        padding-left: 39px;
+        padding-left: 41px;
         padding-top: 56px;
 
         @include lg {
@@ -17,7 +17,7 @@
     }
 
     &__col {
-        margin-right: 60px;
+        margin-right: 49px;
 
         @include lg {
             width: 50%;
@@ -35,15 +35,24 @@
 
         &--title {
             margin-bottom: 4px;
+            letter-spacing: .6px;
         }
 
         &--info {
             flex-grow: 2;
-            margin-left: 15px;
+            margin-left: 9px;
 
             @include lg {
                 margin-left: 0;
                 flex-grow: unset;
+            }
+
+            ul {
+                width: 50%;
+
+                @include lg {
+                    width: 100%;
+                }
             }
         }
 
@@ -78,9 +87,11 @@
             font-family: $rawline;
             line-height: 36px;
             text-transform: uppercase;
+            margin-bottom: 8px;
+
             img {
-                margin-left: 8px;
-                margin-top: -4px;
+                margin-left: 6px;
+                margin-top: -7px;
             }
         }
     }
@@ -93,6 +104,7 @@
         text-transform: uppercase;
         line-height: 18px;
         transition: color .3s;
+        letter-spacing: .7px;
 
         &:hover {
             color: $megawhite;

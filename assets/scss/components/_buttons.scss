@@ -7,23 +7,32 @@
     transition: background-color .3s;
     @include font-size(12px, 24px, bold);
 
-    &:hover {
-        background-color: $gray;
-    }
     &:focus {
         box-shadow: none;
+    }
+
+    &--border {
+        border: 1px solid $gray;
+        transition: background .3s, border-color .3s ;
+
+        &:hover {
+            border-color: $lightgray;
+            background-color: $lightgray;
+        }
     }
 
     &--blue {
         color: $megawhite;
         background: linear-gradient($blue3, $blue);
         transition: opacity .3s;
-        box-shadow: 0px 1px 2px 1px rgba(18,21,26,.4);
+        box-shadow: 0px 1px 2px rgba(18,21,26,.4);
         border: none;
+        padding: 8px 16px;
+        transition: background .3s;
 
         &:hover {
-            opacity: .7;
             color: $megawhite;
+            background: linear-gradient($blue5, $blue);
         }
     }
 
@@ -76,11 +85,6 @@
         color: $megawhite;
         box-shadow: 0px 1px 2px 1px rgba(18,21,26,.4);
         padding-top: 8px;
-        transition: opacity .3s;
-
-        &:hover {
-            opacity: .7;
-        }
 
         &--blue {
             background: linear-gradient($blue4, $ultra-blue);
@@ -106,10 +110,8 @@
         padding-left: 0px;
         padding: 17px 27px;
         border: none;
-        transition: opacity .3s;
 
         &:hover {
-            opacity: .7;
             color: $megawhite;
         }
 

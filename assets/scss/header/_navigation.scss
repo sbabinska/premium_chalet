@@ -36,13 +36,10 @@
             }
 
             .nav-link, .show > .nav-link {
-                color: $white;
                 text-transform: uppercase;
-                font-size: 13px;
-                font-weight: bold;
-                line-height: 36px;
-                padding: 14px 16px;
-                letter-spacing: .9px;
+                padding: 19px 16px 23px;
+                letter-spacing: .8px;
+                @include font(13px, 21px, bold, $raleway, $megawhite);
                 transition: background .3s;
 
                 @include xl {
@@ -52,7 +49,7 @@
 
                 &:hover {
                     border-top: 3px solid $ultra-blue;
-                    padding: 11px 16px 14px;
+                    padding: 16px 16px 23px;
                     background-color: $dark-blue2;
                     color: $megawhite;
 
@@ -73,6 +70,8 @@
                 background-image: url("img/arr.png");
                 height: 6px;
                 width: 8px;
+                position: relative;
+                top: 3px;
             }
         }
 

@@ -9,7 +9,7 @@
 
         .dropdown-toggle {
             position: relative;
-            padding: 5px 9px 9px 8px;
+            padding: 8px 9px 6px 8px;
         }
         .dropdown {
             position: static;
@@ -20,19 +20,21 @@
             }
         }
     }
+
     &__cart-count {
         position: absolute;
-        top: -8px;
-        right: -8px;
-        background-color: $ultra-blue;
-        color: $white;
-        font-size: 10px;
-        line-height: 12px;
-        width: 16px;
-        height: 16px;
+        top: -10px;
+        right: -10px;
+        background-color: #01A1F2;
+        color: $megawhite;
+        font-size: 11px;
+        line-height: 13px;
+        width: 18px;
+        height: 18px;
         border-radius: 50%;
-        border: 2px solid white;
+        border: 2px solid $megawhite;
     }
+
     &__minicart {
         max-width: 394px;
         right: 16px !important;
@@ -78,29 +80,40 @@
         &--item-text {
             font-size: 16px;
             color: $blue;
-            font-weight: semi-bold;
-            padding-top: 12px;
-            padding-left: 24px;
+            font-weight: 600;
+            padding-top: 14px;
+            padding-left: 25px;
+            letter-spacing: .6px;
             flex-grow: 2;
         }
+
         &--item-price {
             font-size: 14px;
-            color: $gray;
+            color: $font-gray;
             font-weight: normal;
             line-height: 17px;
             display: block;
         }
+
         &--total {
             display: flex;
             justify-content: space-between;
             font-size: 16px;
             border-bottom: 1px solid $gray;
-            padding-bottom: 7px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+
             strong {
                 color: $ultra-blue;
                 font-family: $rawline;
+                @include font(16px, 16px, bold, $rawline, $ultra-blue);
+            }
+
+            span {
+                @include font(16px, 16px, normal, $exo2, $blue);
             }
         }
+
         &--info {
             display: flex;
             flex-wrap: wrap;

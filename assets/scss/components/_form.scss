@@ -1,0 +1,84 @@
+.form-group {
+    margin-bottom: 0;
+
+    &.checked {
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 9px;
+            background-image: url("img/check-green.png");
+            right: 14px;
+            top: 30px;
+        }
+
+        .form-control {
+            border-color: $green;
+        }
+
+        label {
+            color: $green;
+        }
+    }
+
+
+    &.required {
+        label {
+            &:before {
+                content: "*";
+                @include font(11px, 11px, bold, $ptsans, $ultra-blue);
+                margin-left: -3px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    label {
+        color: $gray-blue;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 11px;
+        font-family: $ptsans;
+        background-color: $megawhite;
+        padding: 0 6px;
+        margin-left: 11px;
+        z-index: 2;
+    }
+}
+
+.form-control {
+    z-index: 1;
+    color: $blue;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $ptsans;
+    margin-top: -13px;
+    background-color: $megawhite !important;
+    margin-bottom: 10px;
+    height: 40px;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $gray;
+    }
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $gray;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $gray;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $gray;
+}

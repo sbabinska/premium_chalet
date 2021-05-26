@@ -12,21 +12,30 @@
     font-weight: $font-weight;
 }
 
+@mixin xxl {
+    @media (max-width: $xxl) {
+        @content;
+    }
+}
+
 @mixin xl {
     @media (max-width: $xl) {
         @content;
     }
 }
+
 @mixin lg {
     @media (max-width: $large) {
         @content;
     }
 }
+
 @mixin md {
     @media (max-width: $medium) {
         @content;
     }
 }
+
 @mixin sm {
     @media (max-width: $small) {
         @content;

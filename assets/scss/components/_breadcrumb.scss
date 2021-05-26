@@ -8,6 +8,32 @@
         margin-top: -15px;
     }
 
+    &--checkout {
+        margin-top: -39px;
+        padding-top: 14px;
+        padding-bottom: 45px;
+
+        @include xl {
+            margin-top: -38px;
+        }
+
+        @include lg {
+            margin-top: 40px;
+        }
+
+        .breadcrumb-wrapper {
+            display: flex;
+
+            @include md {
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .btn {
+        height: 30px;
+        min-width: 104px;
+    }
+
     a, button, .active {
         @include font(12px, 24px, bold, $raleway, $blue);
         text-transform: uppercase;

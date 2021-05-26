@@ -29,6 +29,11 @@
             @include md {
                 justify-content: flex-end;
             }
+
+            .checkout-info {
+                padding-top: 41px;
+                margin-right: -4px;
+            }
         }
     }
 

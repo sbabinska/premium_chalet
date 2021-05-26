@@ -1,4 +1,14 @@
 .cart {
+    &__qty-value {
+        @include font(16px, 20px, normal, $ptsans, $font-gray);
+        display: block;
+        padding-top: 38px;
+
+        @include lg {
+            padding-top: 4px;
+        }
+    }
+
     &__table {
         border: 1px solid $gray;
         border-radius: 4px;
@@ -14,7 +24,7 @@
         @include font(11px, 11px, bold, $ptsans, $gray-blue);
         padding: 0 5px;
         top: -5px;
-        left: 39px;
+        left: 35px;
     }
 
     &__heading {
@@ -92,9 +102,16 @@
 
     &__product-link {
         padding: 15px 0 17px;
+        align-items: center;
         display: flex;
 
+        &:hover {
+            color: $ultra-blue;
 
+            span {
+                color: $ultra-blue;
+            }
+        }
 
         img {
             max-width: 97px;
@@ -130,6 +147,10 @@
         @include lg {
             display: block;
         }
+
+        @include md {
+            font-size: 10px;
+        }
     }
 
     &__qty-col {
@@ -152,7 +173,7 @@
             &:first-child {
                 border-radius: 4px 0 0 4px;
                 position: relative;
-                right: -9px;
+                right: -10px;
             }
             &:last-child {
                 border-radius: 0 4px 4px 0;
@@ -169,7 +190,7 @@
             height: 40px;
             display: inline-block;
             position: relative;
-            top: 1px;
+            top: 2px;
             right: -5px;
         }
 
@@ -206,6 +227,10 @@
             @include font(24px, 24px, bold, $rawline, $ultra-blue);
             display: block;
             margin-top: -7px;
+
+            @include md {
+                margin-top: 0;
+            }
         }
     }
 
@@ -214,6 +239,10 @@
 
         @include lg {
             margin-top: 11px;
+        }
+
+        img {
+            top: 0;
         }
     }
 }

@@ -1,0 +1,27 @@
+.checkout-info {
+    display: flex;
+    align-items: flex-start;
+
+    @include lg {
+        display: none;
+    }
+
+    &__text {
+        p {
+            margin-bottom: 3px;
+            @include font(16px, 16px, normal, $exo2, $blue);
+        }
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .2px;
+            @include font(11px, 11px, bold, $ptsans, $gray-blue);
+        }
+    }
+
+    img {
+        margin-right: 12px;
+        margin-top: 3px;
+    }
+}

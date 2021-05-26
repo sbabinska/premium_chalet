@@ -1,0 +1,129 @@
+.checkout {
+    .cart__submit-btn {
+        padding: 5px 42px 7px;
+
+        @include lg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .btn {
+            min-width: 203px;
+        }
+
+        p {
+            @include font (16px, 20px, normal, $ptsans, $font-gray);
+            width: 50%;
+            margin-top: 24px;
+            margin-bottom: 0;
+
+            @include lg {
+                width: 100%;
+            }
+
+            a {
+                color: $ultra-blue;
+            }
+        }
+    }
+
+    .form-check {
+        margin-bottom: 17px;
+        margin-top: 15px;
+
+        .form-check-label {
+            @include font(16px, 24px, normal, $ptsans, $blue);
+        }
+
+        .form-check-label {
+            margin-left: 3px;
+        }
+    }
+
+    .cart__table {
+        margin-bottom: 35px;
+
+        form {
+            width: 50%;
+
+            @include lg {
+                width: 100%;
+            }
+        }
+
+        h3 {
+            @include font(16px, 36px, 600, $exo2, $blue);
+            border-bottom: 1px solid $gray;
+            margin-top: 16px;
+            padding-bottom: 1px;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            @include font(11px, 11px, bold, $exo2, $gray-blue);
+            margin-top: 17px;
+            margin-bottom: 11px;
+        }
+    }
+
+    .cart__qty-col {
+        min-width: 91px;
+    }
+
+    .cart__total-row {
+        display: block;
+        border-top: 0;
+        margin-top: -2px;
+        letter-spacing: .8px;
+
+
+        h4 {
+            @include  font(18px, 18px, 600, $ptsans, $blue);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+    }
+
+    .cart__total-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        span, strong {
+            width: 50%;
+            margin-bottom: 20px;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        span {
+            margin-top: 0;
+            @include font(16px, 20px, normal, $ptsans, $font-gray);
+
+            @include md {
+                font-size: 12px;
+            }
+        }
+
+        strong {
+            text-align: right;
+            @include font (17px, 24px, bold, $rawline, $blue);
+            margin-top: -4px;
+
+            @include md {
+                font-size: 14px;
+            }
+        }
+
+        .cart__total {
+            @include font(25px, 24px, bold, $rawline, $ultra-blue);
+            letter-spacing: .1px;
+            margin-top: -7px;
+            padding-top: 0;
+
+            @include md {
+                margin-top: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}

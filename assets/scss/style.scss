@@ -21,6 +21,9 @@
 @import "components/checkout-info";
 @import "components/steps";
 @import "components/form";
+@import "components/content-sidebar";
+@import "components/text-link-list";
+@import "components/profile-img-form";
 
 @import "header/beak";
 @import "header/top";
@@ -41,9 +44,11 @@
 @import "sections/link-list";
 @import "sections/category-list";
 @import "sections/content-section";
+@import "sections/contact-form";
 
 @import "pages/category-page";
 @import "pages/login-page";
 @import "pages/cart-page";
 @import "pages/product-page";
 @import "pages/checkout-page";
+@import "pages/contact";

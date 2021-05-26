@@ -1,0 +1,37 @@
+.contact-form {
+    margin-top: 39px;
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include lg {
+            flex-wrap: wrap;
+        }
+
+        .form-group {
+            width: 48%;
+
+            @include lg {
+                width: 100%;
+            }
+        }
+    }
+
+    h3 {
+        @include font (26px, 36px, 600, $ptsans, $blue);
+    }
+
+    textarea {
+        height: 119px;
+    }
+
+    label {
+        position: relative;
+    }
+
+    .btn {
+        margin-top: 14px;
+    }
+}

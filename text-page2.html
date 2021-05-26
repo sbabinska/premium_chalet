@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css">
+
+<body>
+    <header class="header">
+        <div class="header__top container">
+            <div class="row">
+                <div class="header__col col-sm-7 col-md col-lg-7">
+                    <div class="header__logo">
+                        <img src="assets/img/transparent_logo.png" alt="logo">
+                    </div>
+                    <div class="opening-hours">
+                        <img src="assets/img/time.png" alt="time">
+                        <div class="opening-hours__text">
+                            <div class="opening-hours__row">
+                                LUN.- VEN. <strong>8-18</strong>
+                            </div>
+                            <div class="opening-hours__row">
+                                SAM. <strong>10-15</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__email-btn">
+                        <a href="" class="btn btn--border btn--header-cart">
+                            <img src="assets/img/mail.png" alt="mail">
+                            <span>envoyer un email</span>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="header__col header__col--right col-sm-5 col-md col-lg-5">
+                    <div class="header__login">
+                        <a href="" class="btn btn-icon btn--border">
+                            <img src="assets/img/user.png" alt="cart">
+                            <span>se connecter</span>
+                        </a>     
+                    </div>
+                    <div class="header__search">
+                        <div class="dropdown show">
+                            <a href="#" class="btn btn--border btn--header-cart dropdown-toggle"  role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/img/search.png" alt="search">
+                            </a>
+                            <div class="dropdown-menu header__form" aria-labelledby="dropdownSearch">
+                                <form class="form-group beak" action="">
+                                    <label for="search">Chercher</label>
+                                    <input autocompete="off" class="form-control" type="text" id="search">
+                                    <button class=" btn btn__minicart btn__minicart--darkblue form-control" class="btn" type="submit">
+                                        <img src="assets/img/search-white.png" alt="">
+                                        Chercher
+                                    </button>
+                                </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="header__cart">
+                        <div class="dropdown">
+                            <a href="#" class="btn btn--border btn--header-cart dropdown-toggle"  role="button" alt="cart" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/img/shopping-cart.png">
+                                <span class="header__cart-count">2</span>
+                            </a>
+                            <div class="dropdown-menu header__minicart beak" aria-labelledby="dropdownCartButton">
+                              <ul class="header__minicart--items">
+                                  <li class="header__minicart--item">
+                                      <img src="https://premiumchalet.fr/uploads/media_file/file/3047/thumb_rita_3x4_4_28mm_2__1e62.png" alt="">
+                                      <p class="header__minicart--item-text">
+                                          Alva 4x4 28mm 
+                                          <span class="header__minicart--item-price">1 x 3120.59 €</span>
+                                        </p>
+                                      <button class="btn btn-remove  btn--border">
+                                          <img src="assets/img/trash-empty.png" alt="">
+                                      </button>
+                                  </li>
+                                  <li class="header__minicart--item">
+                                    <img src="https://premiumchalet.fr/uploads/media_file/file/3047/thumb_rita_3x4_4_28mm_2__1e62.png" alt="">
+                                    <p class="header__minicart--item-text">
+                                        Alva 4x4 28mm 
+                                        <span class="header__minicart--item-price">1 x 3120.59 €</span>
+                                    </p>
+                                    <button class="btn btn-remove  btn--border">
+                                        <img src="assets/img/trash-empty.png" alt="">
+                                    </button>
+                                </li>
+                              </ul>
+                              <p class="header__minicart--total">
+                                <span>Totale: </span>
+                                <strong>11287.44 €</strong>
+                              </p>
+                              <a href="" class="btn btn__minicart btn__minicart--blue">Checkout</a>
+                              <a href="" class="btn btn__minicart btn__minicart--darkblue">Voir Le panier</a>
+                              <ul class="header__minicart--info">
+                                <li>
+                                    <img src="assets/img/Контур 1446.png" alt="">
+                                    Paiements Sécurisés
+                                </li>
+                                <li>
+                                    <img src="assets/img/Контур 1450.png" alt="">
+                                    Emballage Solide
+                                </li>
+                                <li>
+                                    <img src="assets/img/Контур 1451.png" alt="">
+                                    Transport Gratuit
+                                </li>
+                                <li>
+                                    <img src="assets/img/Контур 1452.png" alt="">
+                                    Assistance Client
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__fb">
+                        <a href="" class="header__fb-btn">
+                            <img src="assets/img/Icon awesome-facebook.png" alt="search">
+                        </a>
+                    </div>
+                    <div class="header__lang">
+                        <div class="dropdown show">
+                            <a href="#" class="header__lang-btn dropdown-toggle"  role="button" id="dropdownLangSwitch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Française</span>
+                                <img src="assets/img/arr.png" alt="search">
+                            </a>
+                            <div class="dropdown-menu beak" aria-labelledby="dropdownLangSwitch">
+                              <a class="dropdown-item" href="#">
+                                  <img src="assets/img/FR.png" alt="">
+                                  <span>FRANCAISE</span>
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                <img src="assets/img/GB.png" alt="">  
+                                <span>ENGLISH</span>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="header__navigation">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bienvenue chez Janolex</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Produits
+                            </a>
+                            <div class="dropdown-menu header__dropdown beak" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                  <img src="assets/img/categories/thumb_emma_3x3_3__eb88.png" alt="">
+                                  <span>Abris de jardin</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/img/categorieS/thumb_garage_3_2x5_2_44mm_2__1_8a01.png" alt="">
+                                    <span>Chalets en bois</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/img/categories/thumb_helmand_3x9_3__000a.png" alt="">
+                                    <span>Maisons en bois</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/img/categories/thumb_oskar_8_87x10_04_4__0704.png" alt="">
+                                    <span>Garages</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/img/categories/thumb_oslo_3__8524.png" alt="">
+                                    <span>Abris de jardin</span>
+                                </a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Technologie</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Cabinplanner</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Á Propos de nous</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info--icon">
+                            <img src="assets/img/smartphone.png" alt="">
+                        </div>
+                        <div class="contact-info--text">
+                            <p class="contact-info--number-title">Appelez nous</p>
+                            <p class="contact-info--number">+33 755 539 355</p>
+                        </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <button class="btn btn--back">Reculer</button>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Produits</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">abris de jardin</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="top-section">
+        <div class="container">
+            <div class="top-section__inner">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="text-link-list">
+                            <li>
+                                <a href="#" class="text-link-list__item">Conditions d'achat et garanties</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-link-list__item active">Politique de confidentialité et cookies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-link-list__item">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-link-list__item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <h2>Politique de confidentialité et cookies</h2>
+                        <p class="bold">Sociosqu nam aliquet class quam hendrerit leo a fames commodo nec ac adipiscing a ac ullamcorper</p>
+                        <p>Neque augue per tellus aenean potenti adipiscing venenatis adipiscing est ad amet vel cum a orci id parturient himenaeos interdum curabitur condimentum elit dolor elit ridiculus. Sagittis a suspendisse varius facilisis mauris at semper sit curae tellus auctor tempor commodo convallis. Tortor a ac eleifend mi facilisis mi orci dui venenatis quis habitasse odio nec ullamcorper magnis a. Egestas cum a eleifend adipiscing mi elit iaculis dui sed a nibh adipiscing mus tellus elementum a.
+                        </p>
+                        <p>Turpis suspendisse rhoncus at fringilla parturient facilisis phasellus ac vestibulum amet parturient praesent ullamcorper quis mollis sed sociosqu dolor. Condimentum a condimentum velit parturient class magna vel a pulvinar phasellus a litora dis aliquet suspendisse rutrum tellus malesuada integer diam posuere vestibulum ultricies condimentum adipiscing litora scelerisque faucibus.</p>
+                        <p class="bold">Nostra rhoncus suspendisse ullamcorper lectus</p>
+                        <p>Nibh inceptos dictumst dictumst nibh vulputate ad est curae eu et placerat a lorem per feugiat scelerisque bibendum parturient egestas nullam. Enim aenean mattis consequat parturient sodales aliquam a vulputate mi cras ante a tellus eleifend volutpat volutpat cursus eu vestibulum inceptos phasellus cum commodo diam quam et orci ullamcorper. Magnis facilisis suscipit natoque vestibulum vestibulum parturient ut eu blandit sagittis fringilla vestibulum torquent penatibus sit leo. Ullamcorper penatibus id nulla vestibulum cum scelerisque vestibulum ligula a augue euismod ad volutpat quis parturient mi consequat natoque hac nam a netus dictum parturient augue leo a egestas. Laoreet consectetur orci odio id leo aenean nunc fames bibendum quam massa taciti auctor per at dignissim.</p>
+                        <p class="bold">Per elit fames scelerisque a inceptos</p>
+                        <ul>
+                            <li>Nam laoreet vel at duis consectetur consectetur </li>
+                            <li>Netus metus turpis tristique condimentum a consectetur nibh a class eu </li>
+                            <li>Morbi consectetur semper a eros parturient lobortis ad a a vestibulum </li>
+                            <li>Potenti mattis felis a vestibulum ad est inceptos condimentum lectus hendrerit rhoncus tempor </li>
+                            <li>Vestibulum tellus tellus</li>
+                            <li>Adipiscing dui ullamcorper habitant primis nascetur pretium a iaculis egestas a mi nibh sed mus a feugiat adipiscing morbi interdum </li>
+                            <li>Dictumst a sem potenti quis a erat molestie blandit quam purus a penatibus dictum sapien facilisis consequat neque sempe</li>
+                        </ul>
+                        <p class="bold">A convallis curabitur himenaeos vestibulum ullamcorper amet himenaeos vestibulum ante augue pharetra vestibulum vestibulum netus id vestibulum orci</p>
+                        <p>Risus a at scelerisque suspendisse bibendum scelerisque pulvinar adipiscing vivamus eget ac diam ad mollis in himenaeos ultricies vestibulum a etiam. Ad tellus tellus semper accumsan parturient consectetur in mus egestas ac nullam a a a sapien parturient ligula a. Sodales adipiscing vestibulum neque eget etiam enim suspendisse sed porta tristique fames nam laoreet venenatis eget integer a.</p>
+                        <p>Malesuada parturient aliquet a dolor dolor vestibulum volutpat maecenas a vestibulum urna adipiscing ridiculus hendrerit phasellus consectetur. Massa tellus ullamcorper arcu torquent mollis condimentum facilisi per id parturient scelerisque a habitant eu lorem adipiscing sodales nunc adipiscing parturient quam cubilia augue cras vitae quisque in. Est mi vestibulum adipiscing vestibulum a magna dignissim commodo porta id condimentum commodo a eros convallis ornare rutrum mus lacinia a dis suscipit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-9 cta__text-col">
+                    <h3>Avez-vous des questions? Nous pouvons aider!</h3>
+                    <p>Fournissez-nous des détails. Nous vous répondrons dans les plus brefs délais.</p>
+                </div>
+                <div class="col-md-5 col-lg-3 cta__button-col">
+                    <a class="btn btn--arrow" href="#">
+                        Contactez-nous
+                        <img src="assets/img/arrow-right.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__inner">
+                <div class="social__col">
+                    <div class="contact-info">
+                        <div class="contact-info--icon">
+                            <img src="assets/img/smartphone.png" alt="">
+                        </div>
+                        <div class="contact-info--text">
+                            <p class="contact-info--number-title">Appelez nous</p>
+                            <p class="contact-info--number">+33 755 539 355</p>
+                        </div>
+                    </div>
+                    <div class="opening-hours">
+                        <img src="assets/img/time-white.png" alt="time">
+                        <div class="opening-hours__text">
+                            <div class="opening-hours__row">
+                                LUN.- VEN. <strong>8-18</strong>
+                            </div>
+                            <div class="opening-hours__row">
+                                SAM. <strong>10-15</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-icon btn--contact">
+                        <img src="assets/img/mail-white.png" alt="mail">
+                        <span>envoyer un email</span>
+                    </a>
+                </div>
+                <div class="social__col">
+                    <a href="" class="btn btn-icon btn--social">
+                        <img src="assets/img/Icon awesome-facebook-messenger.png" alt="search">
+                    </a>
+                    <a href="" class="btn btn-icon btn--social">
+                        <img src="assets/img/Icon awesome-facebook-white.png" alt="search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment">
+        <div class="container">
+            <div class="payment__inner">
+                <p>Payez rapidement et facilement</p>
+                <img src="assets/img/payment.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__col--title">Produits</h4>
+                    <ul>
+                        <li><a class="footer__item" href="">Abris de jardin</a></li>
+                        <li><a class="footer__item" href="">Chalets en bois</a></li>
+                        <li><a class="footer__item" href="">Maisons en bois</a></li>
+                        <li><a class="footer__item" href="">Maisons en bois</a></li>
+                        <li><a class="footer__item" href="">Garages</a></li>
+                        <li><a class="footer__item" href="">Summer houses</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col--title">Autres pages</h4>
+                    <ul>
+                        <li><a class="footer__item" href="">Bienvenue chez Janolex</a></li>
+                        <li><a class="footer__item" href="">Technologie</a></li>
+                        <li><a class="footer__item" href="">Cabinplanner</a></li>
+                        <li><a class="footer__item" href="">Á Propos de nous</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col--info">
+                    <h4 class="footer__col--title">Informations</h4>
+                    <ul>
+                        <li><a class="footer__item" href="">Conditions d'achat et garanties</a></li>
+                        <li><a class="footer__item" href="">Politique de confidentialité et cookies</a></li>
+                        <li><a class="footer__item" href="">Sitemap</a></li>
+                        <li><a class="footer__item" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col--address">
+                    <h4 class="footer__col--title">Adresse <img src="assets/img/link.png" alt=""></h4>
+                    <p>Ilgoji g. 54, Lindiniškės 14181 Vilnius
+                        Lituanie / Lietuva </p>
+                    <a href="" class="btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+            <div class="container">
+                <div class="copyright__inner">
+                    <p>Copyright © 2020 by</p>
+                    <img src="assets/img/logo_strona.png" alt="">
+                    <img src="assets/img/rr.png" alt="">
+                </div>
+            </div>    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

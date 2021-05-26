@@ -22,6 +22,10 @@
             padding: 30px 20px;
         }
 
+        &.single {
+            padding: 0;
+        }
+
         img {
             max-width: 100%;
             border-radius: 0 4px 4px 0;
@@ -31,6 +35,33 @@
             @include lg {
                 width: 100%;
             }
+        }
+
+        .dropdown-toggle {
+            width: 100%;
+            text-align: left;
+            padding-top: 8px;
+            padding-left: 8px;
+            border-radius: 4px 4px 0 0;
+            transition: border-color .3s;
+            text-transform: unset;
+            @include font (16px, 20px, normal, $ptsans, $font-gray);
+
+            &:hover {
+                background-color: $megawhite;
+                border-color: $gray3;
+            }
+
+            &::after {
+                margin-top: 10px;
+                position: absolute;
+                right: 14px;
+                top: 8px;
+            }
+        }
+
+        .dropdown-menu {
+            width: 100%;
         }
     }
 
@@ -92,32 +123,5 @@
     .btn__minicart {
         display: inline-block;
         padding: 6px 15px;
-    }
-
-    .dropdown-toggle {
-        width: 100%;
-        text-align: left;
-        padding-top: 8px;
-        padding-left: 8px;
-        border-radius: 4px 4px 0 0;
-        transition: border-color .3s;
-        text-transform: unset;
-        @include font (16px, 20px, normal, $ptsans, $font-gray);
-
-        &:hover {
-            background-color: $megawhite;
-            border-color: $gray3;
-        }
-
-        &::after {
-            margin-top: 10px;
-            position: absolute;
-            right: 14px;
-            top: 8px;
-        }
-    }
-
-    .dropdown-menu {
-        width: 100%;
     }
 }

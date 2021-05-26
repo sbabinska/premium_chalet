@@ -1,0 +1,22 @@
+.content-sidebar {
+    padding-left: 25px;
+
+    h3 {
+        @include font(16px, 36px, 600, $ptsans, $blue);
+        border-bottom: 1px solid $gray;
+        letter-spacing: .8px;
+        margin-top: -7px;
+        margin-bottom: 17px;
+    }
+
+    > img {
+        width: 100%;
+        min-height: 159px;
+        object-fit: cover;
+        margin-bottom: 12px;
+    }
+
+    .product-list__item {
+        margin-bottom: 52px;
+    }
+}

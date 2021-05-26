@@ -1,0 +1,33 @@
+.text-link-list {
+    padding: 0;
+
+    &__item {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        border-left: 1px solid $lightgray;
+        @include font(16px, 26px, normal, $ptsans, $font-gray);
+        transition: border-color .3s;
+
+        &:hover {
+            text-decoration: none;
+            border-left: 1px solid $font-gray;
+            color: $font-gray;
+        }
+
+        &.active {
+            background-color: $lightgray;
+            border-left: 2px solid $ultra-blue;
+            padding: 13px 15px;
+            @include font(16px, 20px, bold, $ptsans, $black);
+
+            &:hover {
+                border-left: 2px solid $ultra-blue;
+            }
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+}

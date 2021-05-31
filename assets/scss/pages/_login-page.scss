@@ -34,7 +34,7 @@
     &__link {
         @include font(16px, 24px, normal, $ptsans, $ultra-blue);
         display: block;
-        margin-bottom: 16px;
+        margin-bottom: 11px;
     }
 
     &__form {
@@ -67,6 +67,7 @@
 
                 .form-control {
                     border-color: $green;
+                    padding-right: 40px;
                 }
 
                 label {
@@ -88,6 +89,10 @@
             }
         }
 
+        .form-check {
+            padding-left: 4px;
+        }
+
         .form-control {
             z-index: 1;
             color: $blue;
@@ -95,19 +100,19 @@
             line-height: 24px;
             font-family: $ptsans;
             margin-top: -13px;
-            background-color: $megawhite !important;
+            background-color: $megawhite;
             margin-bottom: 18px;
             margin-bottom: 13px;
 
-            &:focus {
+            &:focus, &:hover {
                 box-shadow: none;
-                border-color: $gray;
+                border-color: $gray3;
             }
         }
 
         .form-check {
             label {
-                padding-left: 6px;
+                padding-left: 21px;
                 @include font(16px, 19px, normal, $ptsans, $blue);
             }
         }

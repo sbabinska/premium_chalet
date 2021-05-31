@@ -6,27 +6,29 @@
 
     &--text {
         color: $ultra-blue;
-        padding: 10px 27px 5px 18px;
+        padding: 11px 33px 5px 16px;
     }
 
     &--number {
         color: $megawhite;
         line-height: 20px;
         font-size: 20px;
+        @include font(20px, 20px, normal, $exo2, $megawhite);
     }
 
     &--number-title {
         padding-left: 2px;
         color: $ultra-blue;
         font-weight: bold;
+        @include font(14px, 20px, bold, $raleway, $ultra-blue);
     }
 
     &--icon {
-        padding-top: 16px;
+        padding-top: 18px;
         padding-left: 35px;
     }
 
     p {
-        margin-bottom: 3px;
+        margin-bottom: 0;
     }
 }

@@ -1,10 +1,10 @@
 .header {
     &__navigation {
         position: relative;
-        top: -30px;
+        top: -31px;
 
         @include lg {
-            top: 20px;
+            top: -75px;
         }
 
         &:before {
@@ -22,6 +22,45 @@
             }
         }
 
+        .navbar-collapse.show {
+            @include lg {
+                position: absolute;
+                height: 100vh;
+                width: 100vw;
+                top: 0;
+                left: 0;
+                z-index: 7;
+                transition: none;
+                background-color: rgba($color: $megablack, $alpha: .6);
+            }
+
+            .navbar-nav {
+                @include lg {
+                    width: 343px;
+                    background-color: $megawhite;
+                    margin-top: -7px;
+                }
+            }
+
+            .navbar-mobile-title {
+                @include font(28px, 32px, bold, $exo2, $black);
+                padding: 41px 15px 19px;
+                width: 343px;
+                background-color: $megawhite;
+                max-height: 100vh;
+                overflow-y: auto;
+            }
+        }
+
+        .collapsing {
+            @include md {
+                position: absolute;
+                top: 100px;
+                left: -100%;
+                background-color: $megawhite;
+            }
+        }
+
         .navbar {
             background-color: $black;
             padding: 0 0 0 24px;
@@ -29,11 +68,73 @@
 
             @include lg {
                 padding: 10px 0 10px 24px;
+                background-color: transparent;
+                width: 65px;
+                position: static;
+            }
+
+            .nav-item {
+                &:last-child {
+                    .nav-link {
+                        @include lg {
+                            border-bottom: 1px solid $gray;
+                        }
+                    }
+                }
             }
 
             .navbar-toggler {
-                background-color: white;
+                background-color: $megawhite;
+                width: 15px;
+                height: 15px;
+                padding: 0;
+                z-index: 8;
+                position: absolute;
+                top: 45px;
+                left: 312px;
+                border: none;
+
+                &.collapsed {
+                    background-color: $megablack;
+                    width: 40px;
+                    height: 40px;
+                    left: 10px;
+                    top: 35px;
+
+                    @include lg {
+                        left: calc(50vw - 360px);
+                    }
+
+                    /*@include md {
+                        left: calc(50vw - 270px);
+                    }*/
+
+                    @media (max-width: 769px) {
+                        left: calc(50vw - 270px);
+                    }
+
+                    @media (max-width: 575px) {
+                        left: 10px;
+                    }
+
+                    .navbar-toggler-icon {
+                        background-image: url("img/menu.png");
+                        width: 20px;
+                        height: 14px;
+                    }
+                }
+
+                .navbar-toggler-icon {
+                    background-image: url("img/close.png");
+                    width: 100%;
+                    height: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
+
 
             .nav-link, .show > .nav-link {
                 text-transform: uppercase;
@@ -47,18 +148,53 @@
                     padding: 5px 7px;
                 }
 
-                &:hover {
+                @include lg {
+                    color: $black;
+                    padding: 12px 17px 14px;
+                    font-size: 13px;
+                    border-top: 1px solid $gray;
+                    min-width: 343px;
+                    position: relative;
+                }
+
+                &:hover, &:focus {
                     border-top: 3px solid $ultra-blue;
                     padding: 17px 16px 23px;
                     background-color: $dark-blue2;
                     color: $megawhite;
 
-                    @include xl {
-                        padding: inherit;
-                        border-top: none;
-                        background-color: $black;
-                        color: $white;
-                        padding-left: 8px;
+                    @include lg {
+                        border-top: 1px solid $gray;
+                        padding: 12px 17px 12px;
+                        background-color: $megawhite;
+                        color: $black;
+                    }
+                }
+
+                &.btn--border--user-icon {
+                    padding-left: 45px;
+
+                    &::before {
+                        top: 14px;
+                        left: 17px;
+                    }
+                }
+
+                &.btn--border--mail-icon {
+                    padding-left: 52px;
+
+                    &::before {
+                        top: 14px;
+                        left: 17px;
+                    }
+                }
+
+                &.btn--border--fb-icon {
+                    padding-left: 49px;
+
+                    &::before {
+                        top: 16px;
+                        left: 17px;
                     }
                 }
             }
@@ -72,6 +208,17 @@
                 width: 8px;
                 position: relative;
                 top: 3px;
+
+                @include lg {
+                    width: 46px;
+                    height: 46px;
+                    border-left: 1px solid $gray;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
             }
         }
 
@@ -94,8 +241,9 @@
 
         @include lg {
             flex-direction: column;
-            background-color: $black;
-            padding: 21px 0 14px;
+            padding: 0 0 0;
+            border: none;
+            border-radius: unset;
 
             &::before {
                 display: none;
@@ -104,7 +252,10 @@
 
         .dropdown-item {
             display: inline-block;
-            padding: 0 21px;
+
+            @include lg {
+                padding: 0;
+            }
 
             &:hover {
                 background-color: $megawhite;
@@ -117,6 +268,7 @@
             img {
                 display: block;
                 margin-bottom: 16px;
+
                 @include lg {
                     display: none;
                 }
@@ -131,7 +283,22 @@
 
                 @include lg {
                     text-align: left;
-                    @include font(12px, 18px, bold, $raleway, $white);
+                    @include font(12px, 18px, bold, $raleway, $black);
+                    border-top: 1px solid $gray;
+                    background-color: $lightgray;
+                    padding: 12px 17px 14px;
+                }
+            }
+        }
+    }
+
+    .dropdown.show {
+        > .dropdown-toggle {
+            &::after {
+                @include lg {
+                    transform: rotate(180deg);
+                    border-left: none;
+                    border-right: 1px solid $gray;
                 }
             }
         }

@@ -45,25 +45,24 @@
         font-family: $ptsans;
         background-color: $megawhite;
         padding: 0 6px;
-        margin-left: 11px;
+        margin-left: 9px;
         z-index: 2;
     }
 }
 
 .form-control {
     z-index: 1;
-    color: $blue;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: $ptsans;
     margin-top: -13px;
     background-color: $megawhite !important;
     margin-bottom: 10px;
     height: 40px;
+    border-color: $gray;
+    padding-left: 13px;
+    @include font(16px, 24px, normal, $ptsans, $blue);
 
     &:focus {
         box-shadow: none;
-        border-color: $gray;
+        border-color: $gray3;
     }
 }
 

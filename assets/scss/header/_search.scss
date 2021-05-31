@@ -3,8 +3,8 @@
         padding-top: 41px;
         margin-right: 8px;
 
-        @include md {
-            display: none;
+        @include lg {
+            padding-top: 16px;
         }
 
         .dropdown {
@@ -17,50 +17,42 @@
             }
         }
     }
+
     &__form {
-        max-width: 394px;
+        width: calc(100vw - 40px);
+        max-width: 395px;
         top: 89px !important;
         right: 13px !important;
         left: auto !important;
         transform: none !important;
-        width: calc(100% - 40px);
+
+        @include lg {
+            top: 64px !important;
+        }
+
 
         .form-group {
-            padding: 10px 22px 0 24px;
+            padding: 10px 24px 16px;
             &:before {
-                right: 207px;
+                right: 209px;
+
+                @include lg {
+                    right: 86px;
+                }
+
+                @include md {
+                    right: 62px;
+                }
             }
         }
 
-        label {
-            color: $gray-blue;
-            font-size: 11px;
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 11px;
-            font-family: $ptsans;
-            background-color: $megawhite;
-            padding: 0 6px;
-            margin-left: 11px;
-            z-index: 2;
-        }
-
-        input {
+        .form-control {
             z-index: 1;
-            color: $blue;
-            font-size: 16px;
-            line-height: 24px;
-            font-family: $ptsans;
-            margin-top: -13px;
-            margin-bottom: 18px;
-
-            &:focus {
-                box-shadow: none;
-                border-color: $gray;
-            }
+            margin-bottom: 16px;
         }
 
         .btn {
+            width: 100%;
             img {
                 margin-top: -3px;
                 margin-right: 8px;

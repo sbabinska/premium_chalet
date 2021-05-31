@@ -11,13 +11,127 @@
         box-shadow: none;
     }
 
+    &--border-white {
+        border-color: $gray5;
+        transition: border-color .3s;
+        color: $megawhite;
+        background-color: transparent;
+
+        &:hover, &:focus {
+            border-color: rgba($color: $gray5, $alpha: .5);
+            color: $megawhite;
+            text-decoration: none;
+        }
+    }
+
+    &--border-light {
+        border-color: $blue8;
+        @include font(12px, 24px, bold, $raleway, $megawhite);
+        position: relative;
+        padding-top: 7px;
+        min-width: 40px;
+        transition: border-color .3s;
+
+        &:hover, &:focus {
+            border-color: rgba($color: $blue8, $alpha: .5);
+            color: $megawhite;
+            text-decoration: none;
+        }
+    }
+
     &--border {
         border: 1px solid $gray;
         transition: background .3s, border-color .3s ;
+        @include font(12px, 24px, bold, $raleway, $black);
+        position: relative;
+        padding-top: 7px;
+        min-width: 40px;
 
-        &:hover {
+        &:hover, &:focus {
             border-color: $lightgray;
             background-color: $lightgray;
+        }
+
+        &--mail-icon {
+            padding-left: 42px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 16px;
+                width: 20px;
+                background-image: url("img/mail.png");
+                position: absolute;
+                top: 11px;
+                left: 15px;
+            }
+
+            &--white {
+                &:before {
+                    background-image: url("img/mail-white.png");
+                }
+            }
+        }
+
+        &--user-icon {
+            padding-left: 42px;
+            padding-right: 16px;
+            min-width: 151px;
+
+
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 18px;
+                width: 12px;
+                background-image: url("img/user.png");
+                position: absolute;
+                top: 10px;
+                left: 15px;
+            }
+        }
+
+        &--search-icon {
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                background-image: url("img/search.png");
+                position: absolute;
+                top: 10px;
+                left: 11px;
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        &--cart-icon {
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 18px;
+                width: 20px;
+                background-image: url("img/shopping-cart.png");
+                position: absolute;
+                top: 10px;
+                left: 9px;
+            }
+        }
+
+        &--fb-icon {
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                background-image: url("img/fb-black.png");
+                position: absolute;
+                top: 10px;
+                left: 9px;
+            }
         }
     }
 
@@ -28,11 +142,47 @@
         box-shadow: 0px 1px 2px rgba(18,21,26,.4);
         border: none;
         padding: 8px 16px;
-        transition: background .3s;
+        transition: background .3s, box-shadow .3s;
 
         &:hover {
             color: $megawhite;
             background: linear-gradient($blue5, $blue);
+            box-shadow: 0px 1px 2px rgba(18,21,26,.6);
+        }
+    }
+
+    &--ultrablue {
+        background: linear-gradient($blue4, $ultra-blue);
+        color: $megawhite;
+        transition: opacity .3s;
+        box-shadow: 0px 1px 2px rgba(18,21,26,.3);
+        border: none;
+        padding: 8px 16px;
+        transition: background .3s, box-shadow .3s;
+
+        &:hover {
+            color: $megawhite;
+            background: linear-gradient($blue6, $ultra-blue);
+            box-shadow: 0px 1px 2px rgba(18,21,26,.6);
+        }
+
+        &--arrow {
+            position: relative;
+            font-size: 16px;
+            padding: 18px 65px 18px 27px;
+            letter-spacing: .5px;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                background-image: url("img/arrow-right.png");
+                position: absolute;
+                top: 20px;
+                background-repeat: no-repeat;
+                right: 33px;
+            }
         }
     }
 
@@ -82,22 +232,7 @@
         display: block;
         margin-bottom: 16px;
         border: none;
-        color: $megawhite;
-        box-shadow: 0px 1px 2px 1px rgba(18,21,26,.4);
         padding-top: 8px;
-
-        &--blue {
-            background: linear-gradient($blue4, $ultra-blue);
-            &:hover {
-                color: $megawhite;
-            }
-        }
-        &--darkblue {
-            background: linear-gradient($blue3, $blue);
-            &:hover {
-                color: $megawhite;
-            }
-        }
     }
 
     &--arrow {

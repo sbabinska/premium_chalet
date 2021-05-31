@@ -1,5 +1,8 @@
 body, html {
     font-family: $raleway;
+    -webkit-font-feature-settings: "lnum";
+       -moz-font-feature-settings: "lnum";
+            font-feature-settings: "lnum";
 }
 
 h1, h2, h3 {
@@ -56,8 +59,12 @@ p, ul li {
         letter-spacing: 1.4px;
     }
 
-    span {
-        color: $ultra-blue;
+    .paragraph-link {
+        color: $blue7;
+
+        &:hover {
+            color: $blue7;
+        }
     }
 }
 

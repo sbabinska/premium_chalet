@@ -20,7 +20,9 @@
         @include  lg {
             padding: 59px 20px 0 20px;
         }
+    }
 
+    &__item-link {
         &:hover {
             color: $ultra-blue;
 

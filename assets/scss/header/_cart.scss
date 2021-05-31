@@ -3,6 +3,10 @@
         padding-top: 41px;
         margin-right: 23px;
 
+        @include lg {
+            padding-top: 16px;
+        }
+
         @include md {
             margin-right: 0;
         }
@@ -28,32 +32,37 @@
         background-color: #01A1F2;
         color: $megawhite;
         font-size: 11px;
-        line-height: 13px;
-        width: 18px;
-        height: 18px;
+        line-height: 15px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         border: 2px solid $megawhite;
+        font-family: $ptsans;
     }
 
     &__minicart {
-        max-width: 394px;
+        width: 394px;
         right: 16px !important;
         top: 91px !important;
         left: unset !important;
         padding: 22px 19px 0 26px;
         transform: none !important;
 
-        @include md {
+        @include lg {
+            top: 64px !important;
             left: unset  !important;
-            right: 20px  !important;
-            width: calc(100vw - 40px);
+            max-width: calc(100vw - 20px);
         }
 
         &:before {
             right: 153px;
 
+            @include lg {
+                right: 35px;
+            }
+
             @include md {
-                right: 8px;
+                right: 13px;
             }
         }
 

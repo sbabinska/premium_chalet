@@ -1,14 +1,14 @@
 .beak {
     &:before {
         content: "";
-        width: 19px;
-        height: 19px;
+        width: 13px;
+        height: 13px;
         background-color: $megawhite;
         border-top: 1px solid $gray;
         border-left: 1px solid $gray;
         transform: rotate(45deg);
         display: block;
         position: absolute;
-        top: -10px;
+        top: -7px;
     }
 }

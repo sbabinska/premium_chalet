@@ -29,10 +29,44 @@
         width: 100%;
         box-shadow: 0 2px 32px rgba(21, 18, 26, .6);
         border-radius: 8px;
+        position: relative;
+        cursor: pointer;
 
         @include lg {
             height: auto;
             margin-bottom: 35px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            height: 80px;
+            width: 80px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            border: 2px solid rgba(255, 255, 255, .6);
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 50%;
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 18px solid $megawhite;
+            margin-left: 2px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
         }
     }
 
@@ -45,6 +79,11 @@
             flex-wrap: wrap;
             padding-left: 40px;
             padding-right: 40px;
+        }
+
+        @include md {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 

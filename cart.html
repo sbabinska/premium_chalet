@@ -32,7 +32,7 @@
     <header class="header">
         <div class="header__top container">
             <div class="row">
-                <div class="header__col col-sm-7 col-md col-lg-7">
+                <div class="header__col col-sm-7">
                     <div class="header__logo">
                         <img src="assets/img/transparent_logo.png" alt="logo">
                     </div>
@@ -40,7 +40,7 @@
                         <img src="assets/img/time.png" alt="time">
                         <div class="opening-hours__text">
                             <div class="opening-hours__row">
-                                LUN. - VEN. <strong>8-18</strong>
+                                LUN.- VEN. <strong>8-18</strong>
                             </div>
                             <div class="opening-hours__row">
                                 SAM. <strong>10-15</strong>
@@ -48,30 +48,26 @@
                         </div>
                     </div>
                     <div class="header__email-btn">
-                        <a href="" class="btn btn-icon">
-                            <img src="assets/img/mail.png" alt="mail">
+                        <a href="#" class="btn btn--border btn--border--mail-icon">
                             <span>envoyer un email</span>
                         </a>
                     </div>
     
                 </div>
-                <div class="header__col header__col--right col-sm-5 col-md col-lg-5">
+                <div class="header__col header__col--right col-sm-5">
                     <div class="header__login">
-                        <a href="" class="btn btn-icon">
-                            <img src="assets/img/user.png" alt="cart">
+                        <a href="#" class="btn btn--border btn--border--user-icon">
                             <span>se connecter</span>
                         </a>     
                     </div>
                     <div class="header__search">
-                        <div class="dropdown show">
-                            <a href="#" class="btn btn-icon dropdown-toggle"  role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/img/search.png" alt="search">
-                            </a>
+                        <div class="dropdown">
+                            <a href="#" class="btn btn--border btn--border--search-icon dropdown-toggle"  role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu header__form" aria-labelledby="dropdownSearch">
                                 <form class="form-group beak" action="">
                                     <label for="search">Chercher</label>
                                     <input autocompete="off" class="form-control" type="text" id="search">
-                                    <button class=" btn btn__minicart btn__minicart--darkblue form-control" class="btn" type="submit">
+                                    <button class=" btn btn--blue" class="btn" type="submit">
                                         <img src="assets/img/search-white.png" alt="">
                                         Chercher
                                     </button>
@@ -81,9 +77,8 @@
                     </div>
                     <div class="header__cart">
                         <div class="dropdown">
-                            <a href="#" class="btn btn-icon dropdown-toggle"  role="button" alt="cart" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/img/shopping-cart.png">
-                                <span class="header__cart-count">2</span>
+                            <a href="#" class="btn btn--border btn--border--cart-icon btn--header-cart dropdown-toggle"  role="button" alt="cart" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="header__cart-count">0</span>
                             </a>
                             <div class="dropdown-menu header__minicart beak" aria-labelledby="dropdownCartButton">
                               <ul class="header__minicart--items">
@@ -112,8 +107,8 @@
                                 <span>Totale: </span>
                                 <strong>11287.44 €</strong>
                               </p>
-                              <a href="" class="btn btn__minicart btn__minicart--blue">Checkout</a>
-                              <a href="" class="btn btn__minicart btn__minicart--darkblue">Voir Le panier</a>
+                              <a href="" class="btn btn__minicart btn--ultrablue">Checkout</a>
+                              <a href="" class="btn btn__minicart btn--blue">Voir Le panier</a>
                               <ul class="header__minicart--info">
                                 <li>
                                     <img src="assets/img/Контур 1446.png" alt="">
@@ -141,10 +136,9 @@
                         </a>
                     </div>
                     <div class="header__lang">
-                        <div class="dropdown show">
+                        <div class="dropdown">
                             <a href="#" class="header__lang-btn dropdown-toggle"  role="button" id="dropdownLangSwitch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span>Française</span>
-                                <img src="assets/img/arr.png" alt="search">
                             </a>
                             <div class="dropdown-menu beak" aria-labelledby="dropdownLangSwitch">
                               <a class="dropdown-item" href="#">
@@ -164,11 +158,30 @@
         <div class="header__navigation">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="navbar-mobile-title mobile-only">
+                          <span>Menu</span>
+                      </div>
                       <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle btn--border--user-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Votre compte
+                            </a>
+                            <div class="dropdown-menu header__dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                  <span>Exécutez CabinPlanner</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span>Mon compte</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span>Déconnexion</span>
+                                </a>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Bienvenue chez Janolex</a>
                         </li>
@@ -210,6 +223,21 @@
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
+                          </li>
+                          <li class="nav-item mobile-only">
+                            <a class="nav-link  btn--border--mail-icon" href="#" id="votre">
+                                envoyer un email
+                            </a>
+                          </li>
+                          <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle btn--border--fb-icon" href="#" id="votre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Facebook
+                            </a>
+                          </li>
+                          <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle" href="#" id="votre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Française 
+                            </a>
                           </li>
                       </ul>
                     </div>

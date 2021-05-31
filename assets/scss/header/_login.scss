@@ -6,25 +6,11 @@
 
         @include lg {
             flex-grow: 2;
+            display: none;
         }
 
         @include md {
             display: none;
-        }
-
-        .btn {
-            min-width: 151px;
-            padding-left: 10px;
-            img {
-                margin-right: 13px;
-                margin-left: 4px;
-                margin-top: -1px;
-            }
-
-            span {
-                display: inline-block;
-                margin-top: 2px;
-            }
         }
     }
 }

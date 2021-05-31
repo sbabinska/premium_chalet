@@ -58,12 +58,13 @@
 
         &--address {
             max-width: 304px;
+
             .btn {
                 min-width: 87px;
-                color: $megawhite;
             }
+
             p {
-                color: $gray;
+                color: $gray4;
                 font-size: 16px;
                 font-family: $ptsans;
                 line-height: 20px;
@@ -97,7 +98,7 @@
     }
 
     &__item {
-        color: $gray;
+        color: $gray4;
         font-size: 12px;
         font-weight: normal;
         font-family: $ptsans;
@@ -107,7 +108,7 @@
         letter-spacing: .7px;
 
         &:hover {
-            color: $megawhite;
+            color: $gray4;
             text-decoration: underline;
         }
     }

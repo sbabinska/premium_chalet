@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/style.css">
@@ -17,7 +17,7 @@
     <header class="header">
         <div class="header__top container">
             <div class="row">
-                <div class="header__col col-sm-7 col-md col-lg-7">
+                <div class="header__col col-sm-7">
                     <div class="header__logo">
                         <img src="assets/img/transparent_logo.png" alt="logo">
                     </div>
@@ -33,30 +33,26 @@
                         </div>
                     </div>
                     <div class="header__email-btn">
-                        <a href="" class="btn btn--border btn--header-cart">
-                            <img src="assets/img/mail.png" alt="mail">
+                        <a href="#" class="btn btn--border btn--border--mail-icon">
                             <span>envoyer un email</span>
                         </a>
                     </div>
     
                 </div>
-                <div class="header__col header__col--right col-sm-5 col-md col-lg-5">
+                <div class="header__col header__col--right col-sm-5">
                     <div class="header__login">
-                        <a href="" class="btn btn-icon btn--border">
-                            <img src="assets/img/user.png" alt="cart">
+                        <a href="#" class="btn btn--border btn--border--user-icon">
                             <span>se connecter</span>
                         </a>     
                     </div>
                     <div class="header__search">
-                        <div class="dropdown show">
-                            <a href="#" class="btn btn--border btn--header-cart dropdown-toggle"  role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/img/search.png" alt="search">
-                            </a>
+                        <div class="dropdown">
+                            <a href="#" class="btn btn--border btn--border--search-icon dropdown-toggle"  role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu header__form" aria-labelledby="dropdownSearch">
                                 <form class="form-group beak" action="">
                                     <label for="search">Chercher</label>
                                     <input autocompete="off" class="form-control" type="text" id="search">
-                                    <button class=" btn btn__minicart btn__minicart--darkblue form-control" class="btn" type="submit">
+                                    <button class=" btn btn--blue" class="btn" type="submit">
                                         <img src="assets/img/search-white.png" alt="">
                                         Chercher
                                     </button>
@@ -66,9 +62,8 @@
                     </div>
                     <div class="header__cart">
                         <div class="dropdown">
-                            <a href="#" class="btn btn--border btn--header-cart dropdown-toggle"  role="button" alt="cart" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/img/shopping-cart.png">
-                                <span class="header__cart-count">2</span>
+                            <a href="#" class="btn btn--border btn--border--cart-icon btn--header-cart dropdown-toggle"  role="button" alt="cart" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="header__cart-count">0</span>
                             </a>
                             <div class="dropdown-menu header__minicart beak" aria-labelledby="dropdownCartButton">
                               <ul class="header__minicart--items">
@@ -97,8 +92,8 @@
                                 <span>Totale: </span>
                                 <strong>11287.44 €</strong>
                               </p>
-                              <a href="" class="btn btn__minicart btn__minicart--blue">Checkout</a>
-                              <a href="" class="btn btn__minicart btn__minicart--darkblue">Voir Le panier</a>
+                              <a href="" class="btn btn__minicart btn--ultrablue">Checkout</a>
+                              <a href="" class="btn btn__minicart btn--blue">Voir Le panier</a>
                               <ul class="header__minicart--info">
                                 <li>
                                     <img src="assets/img/Контур 1446.png" alt="">
@@ -126,10 +121,9 @@
                         </a>
                     </div>
                     <div class="header__lang">
-                        <div class="dropdown show">
+                        <div class="dropdown">
                             <a href="#" class="header__lang-btn dropdown-toggle"  role="button" id="dropdownLangSwitch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span>Française</span>
-                                <img src="assets/img/arr.png" alt="search">
                             </a>
                             <div class="dropdown-menu beak" aria-labelledby="dropdownLangSwitch">
                               <a class="dropdown-item" href="#">
@@ -149,11 +143,30 @@
         <div class="header__navigation">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="navbar-mobile-title mobile-only">
+                          <span>Menu</span>
+                      </div>
                       <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle btn--border--user-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Votre compte
+                            </a>
+                            <div class="dropdown-menu header__dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                  <span>Exécutez CabinPlanner</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span>Mon compte</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span>Déconnexion</span>
+                                </a>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Bienvenue chez Janolex</a>
                         </li>
@@ -196,6 +209,21 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                           </li>
+                          <li class="nav-item mobile-only">
+                            <a class="nav-link  btn--border--mail-icon" href="#" id="votre">
+                                envoyer un email
+                            </a>
+                          </li>
+                          <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle btn--border--fb-icon" href="#" id="votre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Facebook
+                            </a>
+                          </li>
+                          <li class="nav-item dropdown mobile-only">
+                            <a class="nav-link dropdown-toggle" href="#" id="votre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Française 
+                            </a>
+                          </li>
                       </ul>
                     </div>
                     <div class="contact-info">
@@ -217,13 +245,14 @@
                 <span class="pretitle">Premiumchalet.fr</span>
                 <h1>Fabricant d'abris de jardin, garages, maisons et chalet en bois</h1>
                 <p>Avec des machines modernes, nous produisons plus de 2000 cabines par an de pour</p>
-                <a class="btn btn--arrow" href="#">
+                <a class="btn btn--ultrablue btn--ultrablue--arrow" href="#">
                     Cabinplanner
-                    <img src="assets/img/arrow-right.png" alt="">
                 </a>
             </div>
             <div class="jumbotron__col jumbotron__col--video col-lg-7">
-                <iframe class="jumbotron__video" src="" frameborder="0"></iframe>
+                <div class="jumbotron__video">
+                    <img src="assets/img/video-img.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -318,43 +347,51 @@
             <div class="link-list__inner">
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/house.png" alt="">
-                            </div>
-                            <p class="link-list__title">Modèles standard
-                                et personnalisés</p>
+                        <div class="link-list__item">
+                            <a href="#" class="link-list__item-link">
+                                <div class="link-list__img-wrapper">
+                                    <img class="link-list__img" src="assets/img/house.png" alt="">
+                                </div>
+                                <p class="link-list__title">Modèles standard
+                                    et personnalisés</p>
+                            </a>
                             <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/windows.png" alt="">
-                            </div>
-                            <p class="link-list__title">Les fenêtres
-                                et portes </p>
+                        <div class="link-list__item">
+                            <a href="#" class="link-list__item-link">
+                                <div class="link-list__img-wrapper">
+                                    <img class="link-list__img" src="assets/img/windows.png" alt="">
+                                </div>
+                                <p class="link-list__title">Les fenêtres
+                                    et portes </p>
+                            </a>
                             <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/tree.png" alt="">
-                            </div>
-                            <p class="link-list__title">Épinette nordique
-                                séchée au four </p>
+                        <div class="link-list__item">
+                            <a href="#" class="link-list__item-link">
+                                <div class="link-list__img-wrapper">
+                                    <img class="link-list__img" src="assets/img/tree.png" alt="">
+                                </div>
+                                <p class="link-list__title">Épinette nordique
+                                    séchée au four </p>
+                            </a>
                             <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <a class="link-list__item" href="#">
-                            <div class="link-list__img-wrapper">
-                                <img class="link-list__img" src="assets/img/cog.png" alt="">
-                            </div>
-                            <p class="link-list__title">Technologie </p>
+                        <div class="link-list__item">
+                            <a href="#" class="link-list__item-link">
+                                <div class="link-list__img-wrapper">
+                                    <img class="link-list__img" src="assets/img/cog.png" alt="">
+                                </div>
+                                <p class="link-list__title">Technologie </p>
+                            </a>
                             <p class="link-list__subtitle">Nous avons une grande collection de Modèles…</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -437,7 +474,7 @@
                 <div class="col-lg-6 content__text-col">
                     <h2>Cabinplanner®</h2>
                     <p>
-                        <strong>Maison en bois,</strong> maison d’été, cabane en madriers, cabanon – termes connus depuis longtemps qui sont reconnus par les gens comme une maison confortable, belle et naturelle utilisée pour les loisirs, la vie ou pour la décoration de jardin. Le bois a toujours été le plus aimé par nombreuses <span>personnes</span> pour sa valeur intérieure naturelle.
+                        <strong>Maison en bois,</strong> maison d’été, cabane en madriers, cabanon – termes connus depuis longtemps qui sont reconnus par les gens comme une maison confortable, belle et naturelle utilisée pour les loisirs, la vie ou pour la décoration de jardin. Le bois a toujours été le plus aimé par nombreuses <a href="#" class="paragraph-link">personnes</a> pour sa valeur intérieure naturelle.
                     </p>
                     <p>
                         Aujourd’hui, la maison en bois a également acquis une nouvelle signification écologique, qui prend de plus en plus d'importance dans notre monde moderne et mondialisé.
@@ -458,9 +495,8 @@
                     <p>Fournissez-nous des détails. Nous vous répondrons dans les plus brefs délais.</p>
                 </div>
                 <div class="col-md-5 col-lg-3 cta__button-col">
-                    <a class="btn btn--arrow" href="#">
+                    <a class="btn btn--ultrablue btn--ultrablue--arrow" href="#">
                         Contactez-nous
-                        <img src="assets/img/arrow-right.png" alt="">
                     </a>
                 </div>
             </div>
@@ -490,16 +526,15 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="btn btn-icon btn--contact">
-                        <img src="assets/img/mail-white.png" alt="mail">
+                    <a href="#" class="btn btn--border-light btn--border--mail-icon btn--border--mail-icon--white">
                         <span>envoyer un email</span>
                     </a>
                 </div>
                 <div class="social__col">
-                    <a href="" class="btn btn-icon btn--social">
+                    <a href="#" class="btn btn--border-light btn--social">
                         <img src="assets/img/Icon awesome-facebook-messenger.png" alt="search">
                     </a>
-                    <a href="" class="btn btn-icon btn--social">
+                    <a href="#" class="btn btn--border-light btn--social">
                         <img src="assets/img/Icon awesome-facebook-white.png" alt="search">
                     </a>
                 </div>
@@ -550,7 +585,7 @@
                     <h4 class="footer__col--title">Adresse <img src="assets/img/link.png" alt=""></h4>
                     <p>Ilgoji g. 54, Lindiniškės 14181 Vilnius
                         Lituanie / Lietuva </p>
-                    <a href="" class="btn">Contact</a>
+                    <a href="" class="btn btn--border-white">Contact</a>
                 </div>
             </div>
         </div>

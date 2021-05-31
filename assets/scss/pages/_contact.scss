@@ -21,6 +21,16 @@
         border: 1px solid $gray;
         padding: 23px 29px 10px;
 
+        p {
+            a {
+                color: $blue7;
+
+                &:hover {
+                    color: $blue7;
+                }
+            }
+        }
+
         @include lg {
             width: 100%;
             margin-bottom: 30px;

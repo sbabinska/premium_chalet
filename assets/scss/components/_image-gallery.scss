@@ -1,9 +1,10 @@
 .image-gallery {
     position: relative;
+    margin-bottom: 35px;
 
     &__viewport {
         img {
-            max-width: 100%;
+            width: 100%;
             object-fit: contain;
             min-height: 365px;
 
@@ -17,15 +18,68 @@
         margin-top: 10px;
         white-space: nowrap;
         overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: none;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue;
+            outline: none;
+        }
     }
 
     &__item {
         display: inline-block;
         margin-right: 5px;
+        position: relative;
         transition: opacity .3s;
 
         &:hover {
-            opacity: .8;
+            &::before, &::after {
+                opacity: .8;
+            }
+        }
+
+        &.active {
+            &::before, &::after {
+                opacity: .8;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 38px;
+            display: inline-block;
+            height: 38px;
+            background-color: $ultra-blue;
+            opacity: .9;
+            transition: opacity .3s;
+            border: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 0;
+            border-radius: 4px;
+        }
+
+        &::after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: opacity .3s;
+            opacity: 0;
+            left: 50%;
+            background-image: url("img/zoom-in.png");
         }
 
         img {
@@ -94,7 +148,7 @@
     }
 
     .btn-next {
-        right: 4px;
+        right: 0;
         border-radius: 4px 0 0 4px;
 
         &::before {

@@ -1,7 +1,6 @@
 .contact-form {
     margin-top: 39px;
 
-
     &__row {
         display: flex;
         justify-content: space-between;
@@ -20,7 +19,7 @@
     }
 
     h3 {
-        @include font (26px, 36px, 600, $ptsans, $blue);
+        @include font (26px, 36px, 600, $exo2, $blue);
     }
 
     textarea {

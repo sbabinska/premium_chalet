@@ -78,7 +78,7 @@
 
 
         h4 {
-            @include  font(18px, 18px, 600, $ptsans, $blue);
+            @include  font(18px, 18px, 600, $exo2, $blue);
             text-transform: uppercase;
             margin-bottom: 30px;
         }
@@ -106,7 +106,7 @@
 
         strong {
             text-align: right;
-            @include font (17px, 24px, bold, $rawline, $blue);
+            @include font (17px, 24px, bold, $raleway, $blue);
             margin-top: -4px;
 
             @include md {

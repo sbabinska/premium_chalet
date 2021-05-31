@@ -22,6 +22,7 @@
         &.active {
             background-color: $black;
             color: $megawhite;
+            border-color: $black;
         }
 
         &.disabled {

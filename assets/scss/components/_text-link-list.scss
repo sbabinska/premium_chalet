@@ -16,7 +16,7 @@
         }
 
         &.active {
-            background-color: $lightgray;
+            background-color: $gray6;
             border-left: 2px solid $ultra-blue;
             padding: 13px 15px;
             @include font(16px, 20px, bold, $ptsans, $black);

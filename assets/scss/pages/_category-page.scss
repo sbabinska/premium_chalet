@@ -83,6 +83,14 @@
             }
         }
 
+        &__item-info {
+            padding: 14px 20px;
+
+            @include lg {
+                padding: 14px 20px 30px;
+            }
+        }
+
         &__badge {
             right: 0;
         }

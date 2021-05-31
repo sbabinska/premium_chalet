@@ -133,6 +133,27 @@
         font-weight: bold;
     }
 
+    &__item-info {
+        background-color: $lightgray;
+        border: 1px solid $gray;
+        border-radius: 4px;
+        text-align: center;
+
+        > p {
+            @include font(20px, 25px, 600, $exo2, $blue);
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item-info-img {
+        margin-bottom: 1px;
+
+        img {
+            object-fit: contain;
+            width: 125px;
+        }
+    }
+
     .btn__minicart {
         display: inline-block;
         padding: 6px 15px;

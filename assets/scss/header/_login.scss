@@ -12,5 +12,32 @@
         @include md {
             display: none;
         }
+
+        .beak {
+            &::before {
+                left: 73px;
+            }
+        }
+
+        .dropdown-menu {
+            padding: 14px 0 16px;
+            left: 0 !important;
+            min-width: unset;
+            top: 9px  !important;
+        }
+
+        .dropdown-item {
+            padding: 5px 24px 5px 23px;
+
+            @include font(12px, 18px, bold, $raleway, $blue);
+            letter-spacing: .6px;
+            transition: color .3s;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $megawhite;
+                color: $blue2;
+            }
+        }
     }
 }

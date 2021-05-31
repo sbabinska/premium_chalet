@@ -92,3 +92,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.form-check {
+    padding-left: 0;
+
+    label {
+        &:before, &:after {
+            left: -4px;
+            top: 5px;
+        }
+    }
+}

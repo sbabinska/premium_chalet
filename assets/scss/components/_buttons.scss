@@ -183,6 +183,13 @@
                 background-repeat: no-repeat;
                 right: 33px;
             }
+
+            &--str {
+                &:after {
+                    background-image: url("img/arrow-str.png");
+                    top: 24px;
+                }
+            }
         }
     }
 

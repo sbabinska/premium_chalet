@@ -142,6 +142,15 @@
         }
     }
 
+    &__table-icon-wrapper {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 24px;
+        top: 6px;
+    }
+
     &__table-head {
         .nav-item {
             margin-right: 10px;
@@ -170,6 +179,11 @@
             border: none;
             @include font(16px, 16px, normal, $ptsans, $font-gray);
             padding: 14px 24px;
+
+            &.icon-row {
+                position: relative;
+                padding-left: 73px;
+            }
         }
 
         tr:nth-child(odd) {

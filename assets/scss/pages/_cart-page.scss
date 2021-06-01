@@ -1,4 +1,8 @@
 .cart {
+    &__qty-input {
+        @include font (12px, 24x, bold, $raleway, $black);
+    }
+
     &__qty-value {
         @include font(16px, 20px, normal, $ptsans, $font-gray);
         display: block;

@@ -38,6 +38,17 @@
 
     &__controls-row {
         margin-top: -11px;
+
+        @include xl {
+            margin-top: 13px;
+        }
+
+        .cart__qty-col {
+            @include xl {
+                min-width: unset;
+                margin-left: -10px;
+            }
+        }
     }
 
     &__price {
@@ -67,11 +78,20 @@
             display: inline-block;
             width: 51%;
 
+            @include xl {
+                width: 100%;
+            }
+
             .dropdown-toggle {
                 width: 208px;
                 text-align: left;
                 text-transform: none;
                 transition: border-color .3s;
+
+                @include xl {
+                    width: 100%;
+                }
+
 
                 &:hover {
                     border-color: $gray3;
@@ -80,8 +100,23 @@
                 &::after {
                     position: absolute;
                     right: -13px;
-                    top: 18px;
+                    top: 17px;
+                    border-top: 5px solid;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+
+                    @include xl {
+                        right: 13px;
+                    }
                 }
+            }
+
+            .dropdown-toggle, .dropdown-item {
+                @include font (16px, 23px, normal, $ptsans, $font-gray);
+            }
+
+            .dropdown-item {
+                padding-left: 13px;
             }
         }
 
@@ -174,6 +209,10 @@
         border-radius: 4px;
         margin-bottom: 42px;
 
+        .nav-tabs {
+            border-bottom: none;
+        }
+
         th, td {
             width: 50%;
             border: none;
@@ -186,9 +225,11 @@
             }
         }
 
-        tr:nth-child(odd) {
-            background-color: $lightgray;
+        tr:nth-of-type-child(odd) {
+            background-color: $lightgray ;
         }
+
+
 
         tr:last-child td:first-child {
             border-bottom-left-radius: 10px;
@@ -273,4 +314,9 @@
     & + .cta {
         margin-top: 34px;
     }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #E8ECF1;
+    --bs-table-accent-bg: unset;
 }

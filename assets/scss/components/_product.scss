@@ -225,15 +225,14 @@
             }
         }
 
-        tr:nth-of-type-child(odd) {
+        tr:nth-child(even) {
             background-color: $lightgray ;
         }
 
-
-
-        tr:last-child td:first-child {
+        tr:first-child {
             border-bottom-left-radius: 10px;
             border-top: none;
+            border-top: 1px solid white;
         }
 
         tr:last-child td:last-child {
@@ -317,7 +316,6 @@
     }
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table > tbody > tr:nth-of-type(even) {
     background-color: #E8ECF1;
-    --bs-table-accent-bg: unset;
 }
